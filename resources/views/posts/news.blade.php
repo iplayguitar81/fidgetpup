@@ -31,7 +31,7 @@
 
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
-                <h3>team news</h3>
+                <h3>fidget news</h3>
 
                 @foreach($news as $item)
 
@@ -107,7 +107,9 @@
             </div>
             <div id="menu1" class="tab-pane fade">
                 <h3>league news</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+
             </div>
 
         </div>
