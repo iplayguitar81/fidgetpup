@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a117601e-9e13-42fb-b768-d104ed0af466" name="bowtiesoft (project level)" url="http://bowtiesoft.com">
+        <fileTransfer host="bowtiesoft.com" port="21" rootFolder="/bowtiesoft.com" username="bowtiesoft">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
