@@ -1,305 +1,305 @@
 
 <div id="owl-demo" class="owl-carousel owl-theme">
-    @foreach($scores as $item)
+    {{--@foreach($scores as $item)--}}
 
-        @php
-            $versus_or_at="";
-            $away_nick_dash="$item->afname";
-            $home_nick_dash="";
-            $home_or_away="";
-            $win_or_loss="";
-            $ateam_color= "";
-            $hteam_color= "";
+        {{--@php--}}
+            {{--$versus_or_at="";--}}
+            {{--$away_nick_dash="$item->afname";--}}
+            {{--$home_nick_dash="";--}}
+            {{--$home_or_away="";--}}
+            {{--$win_or_loss="";--}}
+            {{--$ateam_color= "";--}}
+            {{--$hteam_color= "";--}}
 
 
 
-    $game_date = new DateTime($item->datey, new DateTimeZone('America/Los_Angeles'));
-    $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-    $game_date = $game_date->format('M jS Y');
+    {{--$game_date = new DateTime($item->datey, new DateTimeZone('America/Los_Angeles'));--}}
+    {{--$game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));--}}
+    {{--$game_date = $game_date->format('M jS Y');--}}
 
 
-        @endphp
+        {{--@endphp--}}
 
 
 
-        @if ($item->h_initials=='POR')
-            @php
-                $versus_or_at="VS.";
-            @endphp
+        {{--@if ($item->h_initials=='POR')--}}
+            {{--@php--}}
+                {{--$versus_or_at="VS.";--}}
+            {{--@endphp--}}
 
-            @if($item->htotal > $item->atotal)
-                @php
-                    $win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";
+            {{--@if($item->htotal > $item->atotal)--}}
+                {{--@php--}}
+                    {{--$win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";--}}
 
-                @endphp
-            @else
-                @php
-                    $win_or_loss ="";
-                @endphp
-            @endif
-            @if($item->htotal < $item->atotal)
-                @php
-                    $win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";
+                {{--@endphp--}}
+            {{--@else--}}
+                {{--@php--}}
+                    {{--$win_or_loss ="";--}}
+                {{--@endphp--}}
+            {{--@endif--}}
+            {{--@if($item->htotal < $item->atotal)--}}
+                {{--@php--}}
+                    {{--$win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";--}}
 
-                @endphp
+                {{--@endphp--}}
 
 
-            @endif
+            {{--@endif--}}
 
-            @php
-                $home_or_away = $item->afname.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$item->htotal."</span>";
-            @endphp
+            {{--@php--}}
+                {{--$home_or_away = $item->afname.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$item->htotal."</span>";--}}
+            {{--@endphp--}}
 
 
-        @endif
+        {{--@endif--}}
 
 
-        @if ($item->a_initials=='POR')
-            @php
-                $versus_or_at="@";
-            @endphp
+        {{--@if ($item->a_initials=='POR')--}}
+            {{--@php--}}
+                {{--$versus_or_at="@";--}}
+            {{--@endphp--}}
 
-            @if($item->atotal > $item->htotal)
-                @php
-                    $win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";
+            {{--@if($item->atotal > $item->htotal)--}}
+                {{--@php--}}
+                    {{--$win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";--}}
 
-                @endphp
-            @else
-                @php
-                    $win_or_loss ="";
-                @endphp
-            @endif
-            @if($item->atotal < $item->htotal)
-                @php
-                    $win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";
+                {{--@endphp--}}
+            {{--@else--}}
+                {{--@php--}}
+                    {{--$win_or_loss ="";--}}
+                {{--@endphp--}}
+            {{--@endif--}}
+            {{--@if($item->atotal < $item->htotal)--}}
+                {{--@php--}}
+                    {{--$win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";--}}
 
-                @endphp
+                {{--@endphp--}}
 
 
-            @endif
+            {{--@endif--}}
 
-            @php
-                $home_or_away = 'portland trailblazers'.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/>'.$item->hfname.'<span class='box_total_h2'>".$item->htotal."</span>";
-            @endphp
+            {{--@php--}}
+                {{--$home_or_away = 'portland trailblazers'.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/>'.$item->hfname.'<span class='box_total_h2'>".$item->htotal."</span>";--}}
+            {{--@endphp--}}
 
 
-        @endif
+        {{--@endif--}}
 
 
 
-    @if( $item->a_initials =='POR'   )
+    {{--@if( $item->a_initials =='POR'   )--}}
 
-            @php
-                $ateam_color= "portland"
+            {{--@php--}}
+                {{--$ateam_color= "portland"--}}
 
-            @endphp
+            {{--@endphp--}}
 
 
-        @elseif($item->h_initials =='POR')
+        {{--@elseif($item->h_initials =='POR')--}}
 
-            @php
-                $hteam_color= "portland"
+            {{--@php--}}
+                {{--$hteam_color= "portland"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='ATL'))
+        {{--@if(($item->a_initials =='ATL'))--}}
 
-            @php
-                $ateam_color= "atlanta"
+            {{--@php--}}
+                {{--$ateam_color= "atlanta"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='ATL')
-            @php
-                $hteam_color= "atlanta"
+        {{--@elseif($item->h_initials =='ATL')--}}
+            {{--@php--}}
+                {{--$hteam_color= "atlanta"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='BOS'))
+        {{--@if(($item->a_initials =='BOS'))--}}
 
-            @php
-                $ateam_color= "boston"
+            {{--@php--}}
+                {{--$ateam_color= "boston"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='BOS')
-            @php
-                $hteam_color= "boston"
+        {{--@elseif($item->h_initials =='BOS')--}}
+            {{--@php--}}
+                {{--$hteam_color= "boston"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='BKN'))
+        {{--@if(($item->a_initials =='BKN'))--}}
 
-            @php
-                $ateam_color= "brooklyn"
+            {{--@php--}}
+                {{--$ateam_color= "brooklyn"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='BKN')
-            @php
-                $hteam_color= "brooklyn"
+        {{--@elseif($item->h_initials =='BKN')--}}
+            {{--@php--}}
+                {{--$hteam_color= "brooklyn"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='CHA'))
+        {{--@if(($item->a_initials =='CHA'))--}}
 
-            @php
-                $ateam_color= "charlotte"
+            {{--@php--}}
+                {{--$ateam_color= "charlotte"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='CHA')
-            @php
-                $hteam_color= "charlotte"
+        {{--@elseif($item->h_initials =='CHA')--}}
+            {{--@php--}}
+                {{--$hteam_color= "charlotte"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='CHI'))
+        {{--@if(($item->a_initials =='CHI'))--}}
 
-            @php
-                $ateam_color= "chicago"
+            {{--@php--}}
+                {{--$ateam_color= "chicago"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='CHI')
-            @php
-                $hteam_color= "chicago"
+        {{--@elseif($item->h_initials =='CHI')--}}
+            {{--@php--}}
+                {{--$hteam_color= "chicago"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='CLE'))
+        {{--@if(($item->a_initials =='CLE'))--}}
 
-            @php
-                $ateam_color= "cleveland"
+            {{--@php--}}
+                {{--$ateam_color= "cleveland"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='CLE')
-            @php
-                $hteam_color= "cleveland"
+        {{--@elseif($item->h_initials =='CLE')--}}
+            {{--@php--}}
+                {{--$hteam_color= "cleveland"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='DAL'))
+        {{--@if(($item->a_initials =='DAL'))--}}
 
-            @php
-                $ateam_color= "dallas"
+            {{--@php--}}
+                {{--$ateam_color= "dallas"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='DAL')
-            @php
-                $hteam_color= "dallas"
+        {{--@elseif($item->h_initials =='DAL')--}}
+            {{--@php--}}
+                {{--$hteam_color= "dallas"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='DEN'))
+        {{--@if(($item->a_initials =='DEN'))--}}
 
-            @php
-                $ateam_color= "denver"
+            {{--@php--}}
+                {{--$ateam_color= "denver"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='DEN')
-            @php
-                $hteam_color= "denver"
+        {{--@elseif($item->h_initials =='DEN')--}}
+            {{--@php--}}
+                {{--$hteam_color= "denver"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='DET'))
+        {{--@if(($item->a_initials =='DET'))--}}
 
-            @php
-                $ateam_color= "detroit"
+            {{--@php--}}
+                {{--$ateam_color= "detroit"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='DET')
-            @php
-                $hteam_color= "detroit"
+        {{--@elseif($item->h_initials =='DET')--}}
+            {{--@php--}}
+                {{--$hteam_color= "detroit"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
 
-@if(($item->a_initials =='GS'))
+{{--@if(($item->a_initials =='GS'))--}}
 
-            @php
-                $ateam_color= "golden-state"
+            {{--@php--}}
+                {{--$ateam_color= "golden-state"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='GS')
-            @php
-                $hteam_color= "golden-state"
+        {{--@elseif($item->h_initials =='GS')--}}
+            {{--@php--}}
+                {{--$hteam_color= "golden-state"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-    @endif
+    {{--@endif--}}
 
 
-        @if(($item->a_initials =='HOU'))
+        {{--@if(($item->a_initials =='HOU'))--}}
 
-            @php
-                $ateam_color= "houston"
+            {{--@php--}}
+                {{--$ateam_color= "houston"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='HOU')
-            @php
-                $hteam_color= "houston"
+        {{--@elseif($item->h_initials =='HOU')--}}
+            {{--@php--}}
+                {{--$hteam_color= "houston"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='IND'))
+        {{--@if(($item->a_initials =='IND'))--}}
 
-            @php
-                $ateam_color= "indiana"
+            {{--@php--}}
+                {{--$ateam_color= "indiana"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='IND')
-            @php
-                $hteam_color= "indiana"
+        {{--@elseif($item->h_initials =='IND')--}}
+            {{--@php--}}
+                {{--$hteam_color= "indiana"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
@@ -307,302 +307,302 @@
         {{--los-angeles_lakers--}}
 
 
-        @if(($item->a_initials =='LAL'))
+        {{--@if(($item->a_initials =='LAL'))--}}
 
-            @php
-                $ateam_color= "los-angeles_lakers"
+            {{--@php--}}
+                {{--$ateam_color= "los-angeles_lakers"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='LAL')
-            @php
-                $hteam_color= "los-angeles_lakers"
+        {{--@elseif($item->h_initials =='LAL')--}}
+            {{--@php--}}
+                {{--$hteam_color= "los-angeles_lakers"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
 
-        @if(($item->a_initials =='LAC'))
+        {{--@if(($item->a_initials =='LAC'))--}}
 
-            @php
-                $ateam_color= "los-angeles_clippers"
+            {{--@php--}}
+                {{--$ateam_color= "los-angeles_clippers"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='LAC')
-            @php
-                $hteam_color= "los-angeles_clippers"
+        {{--@elseif($item->h_initials =='LAC')--}}
+            {{--@php--}}
+                {{--$hteam_color= "los-angeles_clippers"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='MEM'))
+        {{--@if(($item->a_initials =='MEM'))--}}
 
-            @php
-                $ateam_color= "memphis"
+            {{--@php--}}
+                {{--$ateam_color= "memphis"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='MEM')
-            @php
-                $hteam_color= "memphis"
+        {{--@elseif($item->h_initials =='MEM')--}}
+            {{--@php--}}
+                {{--$hteam_color= "memphis"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='MIA'))
+        {{--@if(($item->a_initials =='MIA'))--}}
 
-            @php
-                $ateam_color= "miami"
+            {{--@php--}}
+                {{--$ateam_color= "miami"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='MIA')
-            @php
-                $hteam_color= "miami"
+        {{--@elseif($item->h_initials =='MIA')--}}
+            {{--@php--}}
+                {{--$hteam_color= "miami"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='MIL'))
+        {{--@if(($item->a_initials =='MIL'))--}}
 
-            @php
-                $ateam_color= "milwaukee"
+            {{--@php--}}
+                {{--$ateam_color= "milwaukee"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='MIL')
-            @php
-                $hteam_color= "milwaukee"
+        {{--@elseif($item->h_initials =='MIL')--}}
+            {{--@php--}}
+                {{--$hteam_color= "milwaukee"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='MIN'))
+        {{--@if(($item->a_initials =='MIN'))--}}
 
-            @php
-                $ateam_color= "minnesota"
+            {{--@php--}}
+                {{--$ateam_color= "minnesota"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='MIN')
-            @php
-                $hteam_color= "minnesota"
+        {{--@elseif($item->h_initials =='MIN')--}}
+            {{--@php--}}
+                {{--$hteam_color= "minnesota"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='NO'))
+        {{--@if(($item->a_initials =='NO'))--}}
 
-            @php
-                $ateam_color= "new-orleans"
+            {{--@php--}}
+                {{--$ateam_color= "new-orleans"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='NO')
-            @php
-                $hteam_color= "new-orleans"
+        {{--@elseif($item->h_initials =='NO')--}}
+            {{--@php--}}
+                {{--$hteam_color= "new-orleans"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='NY'))
+        {{--@if(($item->a_initials =='NY'))--}}
 
-            @php
-                $ateam_color= "new-york"
+            {{--@php--}}
+                {{--$ateam_color= "new-york"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='NY')
-            @php
-                $hteam_color= "new-york"
+        {{--@elseif($item->h_initials =='NY')--}}
+            {{--@php--}}
+                {{--$hteam_color= "new-york"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='OKC'))
+        {{--@if(($item->a_initials =='OKC'))--}}
 
-            @php
-                $ateam_color= "oklahoma-city"
+            {{--@php--}}
+                {{--$ateam_color= "oklahoma-city"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='OKC')
-            @php
-                $hteam_color= "oklahoma-city"
+        {{--@elseif($item->h_initials =='OKC')--}}
+            {{--@php--}}
+                {{--$hteam_color= "oklahoma-city"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='ORL'))
+        {{--@if(($item->a_initials =='ORL'))--}}
 
-            @php
-                $ateam_color= "orlando"
+            {{--@php--}}
+                {{--$ateam_color= "orlando"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='ORL')
-            @php
-                $hteam_color= "orlando"
+        {{--@elseif($item->h_initials =='ORL')--}}
+            {{--@php--}}
+                {{--$hteam_color= "orlando"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='PHI'))
+        {{--@if(($item->a_initials =='PHI'))--}}
 
-            @php
-                $ateam_color= "philadelphia"
+            {{--@php--}}
+                {{--$ateam_color= "philadelphia"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='PHI')
-            @php
-                $hteam_color= "philadelphia"
+        {{--@elseif($item->h_initials =='PHI')--}}
+            {{--@php--}}
+                {{--$hteam_color= "philadelphia"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
 
-        @if(($item->a_initials =='PHO'))
+        {{--@if(($item->a_initials =='PHO'))--}}
 
-            @php
-                $ateam_color= "phoenix"
+            {{--@php--}}
+                {{--$ateam_color= "phoenix"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='PHO')
-            @php
-                $hteam_color= "phoenix"
+        {{--@elseif($item->h_initials =='PHO')--}}
+            {{--@php--}}
+                {{--$hteam_color= "phoenix"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
+        {{--@endif--}}
 
         {{--san-antonio--}}
 
-        @if(($item->a_initials =='SA'))
+        {{--@if(($item->a_initials =='SA'))--}}
 
-            @php
-                $ateam_color= "san-antonio"
+            {{--@php--}}
+                {{--$ateam_color= "san-antonio"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='SA')
-            @php
-                $hteam_color= "san-antonio"
+        {{--@elseif($item->h_initials =='SA')--}}
+            {{--@php--}}
+                {{--$hteam_color= "san-antonio"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
-
-
-
-        @if(($item->a_initials =='SAC'))
-
-            @php
-                $ateam_color= "sacramento"
-
-            @endphp
-
-        @elseif($item->h_initials =='SAC')
-            @php
-                $hteam_color= "sacramento"
-
-            @endphp
-
-        @endif
+        {{--@endif--}}
 
 
 
-        @if(($item->a_initials =='TOR'))
+        {{--@if(($item->a_initials =='SAC'))--}}
 
-            @php
-                $ateam_color= "toronto"
+            {{--@php--}}
+                {{--$ateam_color= "sacramento"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @elseif($item->h_initials =='TOR')
-            @php
-                $hteam_color= "toronto"
+        {{--@elseif($item->h_initials =='SAC')--}}
+            {{--@php--}}
+                {{--$hteam_color= "sacramento"--}}
 
-            @endphp
+            {{--@endphp--}}
 
-        @endif
-
-
-        @if(($item->a_initials =='UTA'))
-
-            @php
-                $ateam_color= "utah"
-
-            @endphp
-
-        @elseif($item->h_initials =='UTA')
-            @php
-                $hteam_color= "utah"
-
-            @endphp
-
-        @endif
-
-        @if(($item->a_initials =='WAS'))
-
-            @php
-                $ateam_color= "washington"
-
-            @endphp
-
-        @elseif($item->h_initials =='WAS')
-            @php
-                $hteam_color= "washington"
-
-            @endphp
-
-        @endif
+        {{--@endif--}}
 
 
 
-        <div class="item">
+        {{--@if(($item->a_initials =='TOR'))--}}
 
-            <table class="header_last_game">
-                <tr><th colspan="3">{{$game_date}}</th></tr>
-                <tr><td><span class="initials {{$ateam_color}}">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials {{$hteam_color}}">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>
-                <tr><td colspan="3" class="score-link"><a class="btn btn-danger btn-xs" role="button" aria-pressed="true" href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Box score</a></td></tr>
-            </table>
+            {{--@php--}}
+                {{--$ateam_color= "toronto"--}}
+
+            {{--@endphp--}}
+
+        {{--@elseif($item->h_initials =='TOR')--}}
+            {{--@php--}}
+                {{--$hteam_color= "toronto"--}}
+
+            {{--@endphp--}}
+
+        {{--@endif--}}
 
 
-        </div>
+        {{--@if(($item->a_initials =='UTA'))--}}
+
+            {{--@php--}}
+                {{--$ateam_color= "utah"--}}
+
+            {{--@endphp--}}
+
+        {{--@elseif($item->h_initials =='UTA')--}}
+            {{--@php--}}
+                {{--$hteam_color= "utah"--}}
+
+            {{--@endphp--}}
+
+        {{--@endif--}}
+
+        {{--@if(($item->a_initials =='WAS'))--}}
+
+            {{--@php--}}
+                {{--$ateam_color= "washington"--}}
+
+            {{--@endphp--}}
+
+        {{--@elseif($item->h_initials =='WAS')--}}
+            {{--@php--}}
+                {{--$hteam_color= "washington"--}}
+
+            {{--@endphp--}}
+
+        {{--@endif--}}
+
+
+
+        {{--<div class="item">--}}
+
+            {{--<table class="header_last_game">--}}
+                {{--<tr><th colspan="3">{{$game_date}}</th></tr>--}}
+                {{--<tr><td><span class="initials {{$ateam_color}}">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials {{$hteam_color}}">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>--}}
+                {{--<tr><td colspan="3" class="score-link"><a class="btn btn-danger btn-xs" role="button" aria-pressed="true" href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Box score</a></td></tr>--}}
+            {{--</table>--}}
+
+
+        {{--</div>--}}
 
 
 
 
-    @endforeach
+    {{--@endforeach--}}
 </div>
 <br/>
 <hr>
