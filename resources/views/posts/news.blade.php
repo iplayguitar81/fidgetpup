@@ -124,11 +124,15 @@
         <div class="tab-content">
             <div id="past" class="tab-pane fade in active">
                 <h3>past blazers</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+
+
             </div>
             <div id="retro" class="tab-pane fade">
                 <h3>retro news</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
             </div>
 
         </div>
