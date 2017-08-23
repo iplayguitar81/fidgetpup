@@ -84,21 +84,21 @@
 
                         {{--<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">--}}
 
-                        <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image">
-                        <h4 class="secondary-posts-title"><a  href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>
-                        @php
-                            $variable= strip_tags($item->body);
-                            $variable =substr($variable,0, 50);
-                        @endphp
-                        <p>{!! $variable !!}...</p>
-                        <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
-                        <br/>
-                        <br/>
+                        {{--<img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image">--}}
+                        {{--<h4 class="secondary-posts-title"><a  href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>--}}
+                        {{--@php--}}
+                            {{--$variable= strip_tags($item->body);--}}
+                            {{--$variable =substr($variable,0, 50);--}}
+                        {{--@endphp--}}
+                        {{--<p>{!! $variable !!}...</p>--}}
+                        {{--<a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>--}}
+                        {{--<br/>--}}
+                        {{--<br/>--}}
 
-                        <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >More Team News...</button>
+                        {{--<button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >More Team News...</button>--}}
 
-                        <br/>
-                        <br/>
+                        {{--<br/>--}}
+                        {{--<br/>--}}
 
                 @endforeach
 
