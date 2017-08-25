@@ -1433,7 +1433,7 @@ em.caption-em{
                 <li @if(\Request::url()==='https://trailblazersfans.com') class='active' @else  @endif><a href="{{url('/')}}">home</a></li>
                 <li @if(\Request::url()==='https://trailblazersfans.com/about') class='active' @else  @endif><a href="{{url('/about')}}">about</a></li>
                 <li><a href="{{url('https://hangout.trailblazersfans.com')}}">forum</a></li>
-                <li @if(\Request::url()==='https://trailblazersfans.com/boxscores') class='active' @else  @endif><a href="{{url('/boxscores')}}">scores</a></li>
+                {{--<li @if(\Request::url()==='https://trailblazersfans.com/boxscores') class='active' @else  @endif><a href="{{url('/boxscores')}}">scores</a></li>--}}
                 <li @if(\Request::url()==='https://trailblazersfans.com/news') class='active' @else  @endif><a href="{{url('/news')}}">news</a></li>
                 <li @if(\Request::url()==='https://trailblazersfans.com/contact') class='active' @else  @endif><a href="{{url('/contact')}}">contact</a></li>
 
