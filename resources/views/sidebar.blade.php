@@ -743,7 +743,7 @@
 
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
-                <h3>Player Tweets</h3>
+                <h3>GhostHits Tweets</h3>
 
                 <a class="twitter-timeline"  href="https://twitter.com/search?q=from%3Aarronafflalo%20OR%20from%3ADame_Lillard%20OR%20from%3Arolopez42%20OR%20from%3Aaldridge_12%20OR%20from%3Anicolas88batum%20OR%20from%3ASteveBlake5%20OR%20from%3Aallencrabbe%20OR%20from%3Apsufraz23%20OR%20from%3AGeeAlonzo%20OR%20from%3AChrisKaman%20OR%20from%3AMeyersLeonard11%20OR%20from%3Awessywes2%20OR%20from%3ACJMcCollum%20OR%20from%3ADWRIGHTWAY1%20OR%20from%3Atrailblazers" data-widget-id="599516450617856000">Tweets about from:arronafflalo OR from:Dame_Lillard OR from:rolopez42 OR from:aldridge_12 OR from:nicolas88batum OR from:SteveBlake5 OR from:allencrabbe OR from:psufraz23 OR from:GeeAlonzo OR from:ChrisKaman OR from:MeyersLeonard11 OR from:wessywes2 OR from:CJMcCollum OR from:DWRIGHTWAY1 OR from:trailblazers</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
