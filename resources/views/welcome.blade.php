@@ -238,7 +238,7 @@
 
 
 
-        <h2 id="latest_games" class="Ripper">trail blazers news</h2>
+        <h2 id="latest_games" class="Ripper">ghosthits news</h2>
 
 
 
