@@ -24,8 +24,8 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
         font-size: 2.4em;
     }
 .main-article-titles a:hover {
-    color: #000;
-    text-shadow: silver 2px 1px 2px;
+    color: silver;
+    text-shadow: #000000 2px 1px 2px;
 }
 .article-title-show {
     color: #E63C4D;
