@@ -44,7 +44,7 @@ Route::get('/', function () {
     $main = DB::table('posts')->where([
         ['main_article','1'],
         ['published','1'],
-    ])->get();
+    ])->orderBy('created_at','desc')->take(1)->get();
 
   //  $main = Post::where('main_article','=', '1')->orderBy('created_at','desc')->take(1)->get();
 
