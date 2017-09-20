@@ -146,6 +146,9 @@
 
 <div class="row">
 <div class="col-md-12">
+    <h4>Upload Article Gallery Images</h4>
+    <p>Drag &amp; Drop images to the box below or click on it to open your computer's file dialog.</p>
+
     <form action="{{url('do-upload')}}"
     class="dropzone" id="addImages">
 
@@ -157,7 +160,7 @@
 
 </div>
 
-            <h4>Article Images</h4>
+            <h4>Uploaded Article Images</h4>
             {{--{{$post->images}}--}}
 
             <div class="row">
