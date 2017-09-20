@@ -17,7 +17,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 
     }
     .main-article-titles a{
-        color: #E63C4D;
+        color: #85f665;
         text-shadow: silver 2px 1px 2px;
         text-decoration: none;
         font-family: Academic !important;
