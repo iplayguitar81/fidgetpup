@@ -160,7 +160,7 @@
 
 </div>
 
-            <h4>Uploaded Article Images</h4>
+            <h4>Uploaded Article Gallery Images</h4>
             {{--{{$post->images}}--}}
 
             <div class="row">
