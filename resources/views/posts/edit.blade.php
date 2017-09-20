@@ -5,7 +5,8 @@
     @can('isAdmin')
 
         <div class="col-md-12">
-    <h1 class="" style="font-family:Pacifico,cursive;color:#E63C4D;font-size:4em;">Edit Post</h1>
+
+    <h1 class="article-title-show" style="font-family:Pacifico,cursive;color:#E63C4D;font-size:4em;">Edit Post</h1>
 
     @if ($errors->any())
         <ul class="alert alert-danger">
