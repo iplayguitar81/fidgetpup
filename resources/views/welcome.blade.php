@@ -323,7 +323,7 @@
 
 <br/>
 
-<div class="col-md-3 col-pull-3">
+<div class="col-md-4 col-pull-4">
     @include('sidebar')
 </div>
 
