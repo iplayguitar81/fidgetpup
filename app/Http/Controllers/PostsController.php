@@ -513,21 +513,21 @@ class PostsController extends Controller
 
         $category="news";
 
-        $news = Post::where('category', '=', $category)->take(1)->get();
+        $news = Post::where('category', '=', $category)->take(3)->orderBy('created_at', 'desc')->get();
 
 
         $category1="retro";
 
-        $retronews = Post::where('category', '=', $category1)->take(1)->get();
+        $retronews = Post::where('category', '=', $category1)->take(3)->orderBy('created_at', 'desc')->get();
 
         $category2="nba";
 
-        $nbanews = Post::where('category', '=', $category2)->take(1)->get();
+        $nbanews = Post::where('category', '=', $category2)->take(3)->orderBy('created_at', 'desc')->get();
 
 
         $category3="former_players";
 
-        $former_players = Post::where('category', '=', $category3)->take(1)->get();
+        $former_players = Post::where('category', '=', $category3)->take(3)->orderBy('created_at', 'desc')->get();
         return view('posts.news', compact('news','retronews', 'nbanews', 'former_players'));
     }
 
