@@ -52,7 +52,7 @@
         <br/>
         <div class="form-group">
             {!! Form::submit('Contact Us!',
-              array('class'=>'btn btn-danger form-control')) !!}
+              array('class'=>'btn btn-success form-control')) !!}
         </div>
         {!! Form::close() !!}
     </div>
