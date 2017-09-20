@@ -141,9 +141,6 @@
     </div>
     {!! Form::close() !!}
 
-<br/>
-<br/>
-
 <div class="row">
 <div class="col-md-12">
     <h4>Upload Article Gallery Images</h4>
