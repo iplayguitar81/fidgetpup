@@ -251,7 +251,7 @@
 
     <a href="{{url('posts')}}">
 
-        <button type="submit" class="uk-button uk-width-1-1 uk-margin-small-bottom">Back to All Posts</button>
+        <button type="submit" class="btn btn-success btn-md active">Back to All Posts</button>
     </a>
 
     @else <?php header("Location: /"); die(); ?>
