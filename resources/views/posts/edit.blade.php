@@ -134,22 +134,28 @@
         <br/>
 <br/>
 
+    <div class="form-group">
+        <div class="">
+            {!! Form::submit('Update', ['class' => 'btn btn-success']) !!}
+        </div>
+    </div>
+    {!! Form::close() !!}
 
-            <br/>
-            <br/>
+<br/>
+<br/>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="{{url('do-upload')}}"
-                          class="dropzone" id="addImages">
+<div class="row">
+<div class="col-md-12">
+    <form action="{{url('do-upload')}}"
+    class="dropzone" id="addImages">
 
-                        {{csrf_field()}}
-                        <input type="hidden" name="gallery_id" value="{{$post->id}}">
+    {{csrf_field()}}
+<input type="hidden" name="gallery_id" value="{{$post->id}}">
 
-                    </form>
-                </div>
+    </form>
+</div>
 
-            </div>
+</div>
 
             <h4>Article Images</h4>
             {{--{{$post->images}}--}}
@@ -173,26 +179,26 @@
 
                                     <br/>
 
-                                    {{--Please Enter Caption Below &amp; Submit!--}}
+                                        {{--Please Enter Caption Below &amp; Submit!--}}
                                     <div class="panel panel-default"><div class="panel-body">
 
-                                            @if($image->caption== null)
+                                        @if($image->caption== null)
 
-                                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
-                                                <div id="{{$image->id}}" class="collapse">
-                                                    {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
-                                                    <br/>
-                                                    {{ Form::hidden('post_id', $post->id ) }}
-                                                    {!! Form::textarea('caption', null, ['class' => 'text-area', 'size' => '30x3']) !!}
-                                                    {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
-                                                    {{--@endif--}}
-                                                    <br/>
-                                                    {!! Form::submit('Save Caption', ['class' => 'btn btn-success']) !!}
-                                                    {!! Form::close() !!}
-                                                </div>
+                                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
+                                        <div id="{{$image->id}}" class="collapse">
+                                        {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
+                                        <br/>
+                                            {{ Form::hidden('post_id', $post->id ) }}
+                                        {!! Form::textarea('caption', null, ['class' => 'text-area', 'size' => '30x3']) !!}
+                                        {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
+                                        {{--@endif--}}
+                                        <br/>
+                                        {!! Form::submit('Save Caption', ['class' => 'btn btn-success']) !!}
+                                        {!! Form::close() !!}
+                                    </div>
                                             @else
 
-                                                <h6>Image Caption:</h6><p>{{$image->caption}}</p></div>
+                                        <h6>Image Caption:</h6><p>{{$image->caption}}</p></div>
 
 
 
@@ -214,15 +220,15 @@
 
 
 
-                                        <br/>
-                                        <br/>
+                                    <br/>
+                                    <br/>
 
-                                        {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
-                                        <button class="btn btn-danger" type="submit">Delete</button>
-                                        {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
-                                        {{--@endif--}}
+                                    {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
+                                    <button class="btn btn-danger" type="submit">Delete</button>
+                                    {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
+                                    {{--@endif--}}
 
-                                        {!! Form::close() !!}
+                                    {!! Form::close() !!}
                                     </div>
 
                                 </li>
@@ -236,17 +242,6 @@
                 </div>
 
             </div>
-
-
-
-    <div class="form-group">
-        <div class="">
-            {!! Form::submit('Update', ['class' => 'btn btn-success']) !!}
-        </div>
-    </div>
-    {!! Form::close() !!}
-
-
 
 <br/>
 <br/>
