@@ -1432,8 +1432,7 @@ em.caption-em{
             <ul class="nav navbar-nav">
                 <li @if(\Request::url()==='https://trailblazersfans.com') class='active' @else  @endif><a href="{{url('/')}}">home</a></li>
                 <li @if(\Request::url()==='https://trailblazersfans.com/about') class='active' @else  @endif><a href="{{url('/about')}}">about</a></li>
-                {{--<li><a href="{{url('https://hangout.trailblazersfans.com')}}">forum</a></li>--}}
-                {{--<li @if(\Request::url()==='https://trailblazersfans.com/boxscores') class='active' @else  @endif><a href="{{url('/boxscores')}}">scores</a></li>--}}
+
                 <li @if(\Request::url()==='https://trailblazersfans.com/news') class='active' @else  @endif><a href="{{url('/news')}}">news</a></li>
                 <li @if(\Request::url()==='https://trailblazersfans.com/contact') class='active' @else  @endif><a href="{{url('/contact')}}">contact</a></li>
 
@@ -1617,8 +1616,8 @@ em.caption-em{
     {{--})();--}}
 {{--</script>--}}
 <style scoped>
-    @import "https://fonts.googleapis.com/css?family=Pacifico";
-    @import "https://fonts.googleapis.com/css?family=Boogaloo";
+    /*@import "https://fonts.googleapis.com/css?family=Pacifico";*/
+    /*@import "https://fonts.googleapis.com/css?family=Boogaloo";*/
     @import "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css";
     @import "{{url('/css/default-skin.css')}}";
     @import "{{url('/css/lightslider.css')}}";
