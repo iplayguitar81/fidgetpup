@@ -13,7 +13,9 @@
 
     @font-face {
         font-family: eightybitty;
-        src: url('{{ public_path('fonts/8-bit.tff') }}');
+
+
+        src: url('/fonts/8-bit.ttf');
     }
 ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63C4D}ul.pagination li{display:inline;margin-left:1em}ul.pagination li a{color:#000;padding:8px 16px;text-decoration:none}ul.pagination li a.active{background-color:silver;color:#fff}ul.pagination li.active{background-color:#E63C4D;color:#f5f5f5;padding:8px 16px}ul.pagination li a:hover:not(.active){background-color:#888a85}
 /* <!-- Bootstrap stuff--> */
@@ -37,7 +39,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
     text-shadow: #000000 2px 1px 2px;
     font-size: 3.8em !important;
     text-align: center;
-    font-family: Academic;
+    font-family: eightybitty;
 }
 hr {
     height: 1px;
