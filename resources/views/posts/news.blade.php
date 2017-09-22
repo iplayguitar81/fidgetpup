@@ -3,6 +3,8 @@
 @section('content')
 
 
+
+
     <h1 class="article-title-show">news by category</h1>
 
 
