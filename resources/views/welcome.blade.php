@@ -261,16 +261,16 @@
                 <div class="text-center">
                     @if($item->category ==="news")
 
-                        <a class="btn-xs btn-danger text-center" href="{{url('news/general')}}">#{{$item->category}}</a>
+                        <a class="btn-xs btn-success text-center" href="{{url('news/general')}}">#{{$item->category}}</a>
 
                     @elseif($item->category ==="retro")
-                        <a class="btn-xs btn-danger text-center" href="{{url('news/retro')}}">#{{$item->category}}</a>
+                        <a class="btn-xs btn-success text-center" href="{{url('news/retro')}}">#{{$item->category}}</a>
 
                     @elseif($item->category ==="former_players")
-                        <a class="btn-xs btn-danger text-center" href="{{url('news/former-players')}}">#{{$item->category}}</a>
+                        <a class="btn-xs btn-success text-center" href="{{url('news/former-players')}}">#{{$item->category}}</a>
 
                     @elseif($item->category ==="nba")
-                        <a class="btn-xs btn-danger text-center" href="{{url('news/nba')}}">#{{$item->category}}</a>
+                        <a class="btn-xs btn-success text-center" href="{{url('news/nba')}}">#{{$item->category}}</a>
 
                     @endif
                 </div>
