@@ -27,7 +27,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
         color: #85f665;
         text-shadow: #000000 2px 1px 2px;
         text-decoration: none;
-        font-family: Academic !important;
+        font-family: eightybitty !important;
         font-size: 2.4em;
     }
 .main-article-titles a:hover {
@@ -37,7 +37,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 .article-title-show {
     color: #85f665;
     text-shadow: #000000 2px 1px 2px;
-    font-size: 3.8em !important;
+    font-size: 2.8em !important;
     text-align: center;
     font-family: eightybitty;
 }
