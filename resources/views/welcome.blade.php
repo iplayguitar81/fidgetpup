@@ -296,10 +296,6 @@
                         {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                         <br/>
                         </p>
-
-
-
-                    <br/>
                 </div>
             </div>
         </div>
@@ -307,6 +303,7 @@
 
                 @endunless
             @endforeach
+            <br/>
             <h2 class="Bebas text-center"><a href="{{ route('posts.news') }}">More Articles...</a></h2>
 
         </div>
