@@ -56,7 +56,7 @@
                             <div class="col-sm-8">
 
 
-                                <h3 class="title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h3>
+                                <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h2>
                                 <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
                                 <p class="text-muted">{{$item->subHead}}</p>
 
