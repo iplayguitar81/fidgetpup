@@ -43,7 +43,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 }
 hr {
     height: 1px;
-    background-color: silver;
+    background-color: #85f665;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
