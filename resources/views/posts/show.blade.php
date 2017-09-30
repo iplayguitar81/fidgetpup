@@ -31,7 +31,9 @@
             ?>
 
            @if($post->user_id != null)
-            <? $author = App\User::find($post->user_id)->name; ?>
+            @php
+            $author = App\User::find($post->user_id)->name;
+            @endphp
 
             {{$author}}
             @endif
