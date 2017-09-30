@@ -26,7 +26,11 @@
 
 
                         @if($item->user_id != null)
-                            <? $author = App\User::find($item->user_id)->name; ?>
+
+                            @php
+                             $author = App\User::find($item->user_id)->name;
+
+                             @endphp
 
 
                         @endif
