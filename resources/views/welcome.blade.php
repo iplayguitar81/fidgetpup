@@ -209,14 +209,15 @@
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
-{{--{{$variable = str_limit($item->body, 100)}}--}}
-   <?
+
+@php
 
             $variable= strip_tags($item->body);
             $variable =substr($variable,0, 150);
        // $variable = (str_limit($item->body, 100));
        // $variable= htmlentities($variable);
-        ?>
+  @endphp
+
        <p class="article-texterson">{{$variable}} ...</p>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
             <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
