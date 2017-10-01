@@ -106,7 +106,7 @@
    &nbsp;
     <a href="{{url('/')}}">
 
-        <button type="submit" class="btn btn-danger center-block btn-md">Back Home</button>
+        <button type="submit" class="btn btn-success center-block btn-md">Back Home</button>
     </a>
 
     </div>
