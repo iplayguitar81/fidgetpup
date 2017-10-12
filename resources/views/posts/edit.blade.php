@@ -103,6 +103,17 @@
                     {{--{!! $errors->first('imgPath', '<p class="help-block">:message</p>') !!}--}}
                 {{--</div>--}}
             {{--</div>--}}
+            <div class="form-group {{ $errors->has('videoPath') ? 'has-error' : ''}}">
+                {!! Form::label('videoPath', trans('posts.videoPath'), ['class' => 'col-sm-3 control-label']) !!}
+                <div class="">
+                    {!! Form::text('videoPath', null, ['class' => 'form-control filename']) !!}
+                    {!! $errors->first('videoPath', '<p class="help-block">:message</p>') !!}
+                </div>
+            </div>
+            <br/>
+
+            <br/>
+
 <br/>
     <label>Current Main Article Image:</label>
     <img class="img-responsive thumbnail" src="../../images/{{ $post->imgPath}}">
@@ -131,16 +142,7 @@
         </div>
         <br/>
         <br/>
-            <div class="form-group {{ $errors->has('videoPath') ? 'has-error' : ''}}">
-                {!! Form::label('videoPath', trans('posts.videoPath'), ['class' => 'col-sm-3 control-label']) !!}
-                <div class="">
-                    {!! Form::text('videoPath', null, ['class' => 'form-control filename']) !!}
-                    {!! $errors->first('videoPath', '<p class="help-block">:message</p>') !!}
-                </div>
-            </div>
-            <br/>
 
-            <br/>
 
 <br/>
 
