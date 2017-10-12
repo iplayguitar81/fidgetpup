@@ -1345,7 +1345,7 @@ ul{
 #top{
 
     background-color: silver;
-    height: 65px;
+    /*height: 65px;*/
 }
 
 
@@ -1410,10 +1410,7 @@ em.caption-em{
 
 <header id="top" role="banner">
     <a href="{{url('/')}}">
-
-
-        Ghost Hits
-        <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/fidgetspinnerdog-logo.jpg')}}">
+        <img alt="fidgetspinnerdog.com" style="width:100%;" src="{{url('images/fidgetspinnerdog-logo.jpg')}}">
 
     </a>
 
