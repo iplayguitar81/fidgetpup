@@ -239,7 +239,10 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->subHead = $request->input('subHead');
+
         $post->imgPath = $filename;
+        $post->videoPath = $request->input('videoPath');
+
         $post->mainImg_caption = $request->input('mainImg_caption');
         $post->main_article = $request->input('main_article');
         $post->published = $request->input('published');
