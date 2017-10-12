@@ -51,11 +51,11 @@
         </ul>
         <br/>
 
+        <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
 
         <p>{!! $post->videoPath !!}</p>
 
 
-        <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
 
 
 
