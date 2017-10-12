@@ -39,7 +39,7 @@ Route::get('/', function () {
     //$scores =boxscore::take(5)->orderBy('datey', 'desc')->limit(5);
 //    $scores = boxscore::orderBy('datey', 'desc')->take(8)->get();
 
-    $published = Post::where('published','=', '1')->orderBy('created_at','desc')->take(1)->get();
+    $published = Post::where('published','=', '1')->orderBy('created_at','desc')->take(3)->get();
 
     $main = DB::table('posts')->where([
         ['main_article','1'],
