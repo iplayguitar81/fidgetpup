@@ -130,8 +130,18 @@
             </div>
         </div>
         <br/>
-
         <br/>
+            <div class="form-group {{ $errors->has('videoPath') ? 'has-error' : ''}}">
+                {!! Form::label('videoPath', trans('posts.videoPath'), ['class' => 'col-sm-3 control-label img_string']) !!}
+                <div class="">
+                    {!! Form::text('videoPath', null, ['class' => 'form-control filename']) !!}
+                    {!! $errors->first('videoPath', '<p class="help-block">:message</p>') !!}
+                </div>
+            </div>
+            <br/>
+
+            <br/>
+
 <br/>
 
     <div class="form-group">
