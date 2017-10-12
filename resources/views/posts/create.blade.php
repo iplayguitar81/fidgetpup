@@ -46,6 +46,19 @@
 <br/>
 <br/>
 
+    <div class="form-group {{ $errors->has('videoPath') ? 'has-error' : ''}}">
+        {!! Form::label('subHead', trans('posts.videoPath'), ['class' => '']) !!}
+        <div class="">
+            {!! Form::text('videoPath', null, ['class' => 'form-control']) !!}
+            {!! $errors->first('videoPath', '<p class="uk-alert-danger">:message</p>') !!}
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+
+
+
 
     <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
         {!! Form::label('main_article', trans('posts.main_article'), ['class' => '']) !!}
