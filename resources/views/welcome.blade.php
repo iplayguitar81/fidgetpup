@@ -161,7 +161,7 @@
         <p>
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img class="img-responsive center-block" src="../images/{{ $item->imgPath}}"></a>
         </p>
-
+        <p>{{ $item->videoPath}}</p>
         {{--*/ @ $rate_sum = 0; $rate_count=0; $rate_avg=0; $rate_pct=0;  /*--}}
 
 
