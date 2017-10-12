@@ -1413,7 +1413,7 @@ em.caption-em{
 
 
         Ghost Hits
-        {{--<img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/blazersfanslogo.png')}}">--}}
+        <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/fidgetspinnerdog-logo.jpg')}}">
 
     </a>
 
