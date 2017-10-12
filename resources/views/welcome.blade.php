@@ -245,76 +245,7 @@
 
 
 
-
-        {{--<h2 id="latest_games" class="Ripper">ghosthits news</h2>--}}
-
-
-
-
-        {{--<div class="row">--}}
-
-            {{--@foreach($posts as $item)--}}
-
-                {{--@unless($item->main_article == 1)--}}
-
-                    {{--@php--}}
-                        {{--$game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));--}}
-                        {{--$game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));--}}
-                        {{--$game_date = $game_date->format('M jS Y');--}}
-                    {{--@endphp--}}
-        {{--<div class="col-xs-12 col-sm-6 col-lg-6">--}}
-
-            {{--<div class="thumbnail">--}}
-
-                {{--<div class="text-center">--}}
-                    {{--@if($item->category ==="news")--}}
-
-                        {{--<a class="btn-xs btn-success text-center" href="{{url('news/general')}}">#{{$item->category}}</a>--}}
-
-                    {{--@elseif($item->category ==="retro")--}}
-                        {{--<a class="btn-xs btn-success text-center" href="{{url('news/retro')}}">#{{$item->category}}</a>--}}
-
-                    {{--@elseif($item->category ==="former_players")--}}
-                        {{--<a class="btn-xs btn-success text-center" href="{{url('news/former-players')}}">#{{$item->category}}</a>--}}
-
-                    {{--@elseif($item->category ==="nba")--}}
-                        {{--<a class="btn-xs btn-success text-center" href="{{url('news/nba')}}">#{{$item->category}}</a>--}}
-
-                    {{--@endif--}}
-                {{--</div>--}}
-
-                {{--<img src="../images/md-img-{{ $item->imgPath}}" alt="">--}}
-                {{--<div class="caption">--}}
-                    {{--<em class="caption-em">{{$item->mainImg_caption}}</em>--}}
-                    {{--<h2 class="secondary-posts-title text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>--}}
-                    {{--<em>Written By: <a href="#">   @if($item->user_id != null)--}}
-                                {{--<? $author = App\User::find($item->user_id)->name; ?>--}}
-
-                                {{--{{$author}}--}}
-                            {{--@endif--}}
-                        {{--</a> on {{$game_date}}</em>--}}
-
-                    {{--@php--}}
-                        {{--$variable= strip_tags($item->body);--}}
-                        {{--$variable =substr($variable,0, 50);--}}
-                    {{--@endphp--}}
-
-                    {{--<p class="second-art-snip">--}}
-
-                        {{--{{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>--}}
-                        {{--<br/>--}}
-                        {{--</p>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-
-
-                {{--@endunless--}}
-            {{--@endforeach--}}
-            {{--<br/>--}}
-            {{--<h2 class="Bebas text-center"><a href="{{ route('posts.news') }}">More Articles...</a></h2>--}}
-
-        {{--</div>--}}
+            <h2 class="Bebas text-center"><a href="{{ route('posts.news') }}">More Stories...</a></h2>
 
 
 
