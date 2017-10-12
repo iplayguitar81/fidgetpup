@@ -24,14 +24,14 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#449
 
     }
     .main-article-titles a{
-        color: #85f665;
+        color: silver;
         text-shadow: #000000 2px 1px 2px;
         text-decoration: none;
         font-family: eightybitty !important;
         font-size: 1.8em;
     }
 .main-article-titles a:hover {
-    color: silver;
+    color: #85f665;
     text-shadow: #000000 2px 1px 2px;
 }
 .article-title-show {
