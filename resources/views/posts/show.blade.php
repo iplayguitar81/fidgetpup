@@ -50,7 +50,14 @@
             <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Ftrailblazersfans.com&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Submit to Reddit" src="{{url('images/Reddit.png')}}"></a></li>
         </ul>
         <br/>
+        @if($post->videoPath !=null)
+
+        <p>{!! $post->videoPath !!}</p>
+
+        @else
         <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
+
+        @endif
 
         <br/>
         <div class="center-block text-center">
