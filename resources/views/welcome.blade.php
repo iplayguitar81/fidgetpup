@@ -229,7 +229,7 @@
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
             <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
-        <button type="submit" class="btn center-block btn-md" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" >Comments</button>
+        <button type="submit" class="btn center-block btn-md" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" ><i class="fa fa-btn fa-comment"></i>Comments</button>
 
         <hr>
 
