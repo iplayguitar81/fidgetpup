@@ -51,7 +51,7 @@
         </ul>
         <br/>
 
-        <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
+        <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'><br/><span>{{$post->mainImg_caption}}</span></p>
 
         <p>{!! $post->videoPath !!}</p>
 
