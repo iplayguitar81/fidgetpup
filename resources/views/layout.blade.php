@@ -1344,7 +1344,7 @@ ul{
 
 #top{
 
-    background-color: #4d5465;
+    background-color: silver;
     height: 65px;
 }
 
