@@ -134,6 +134,7 @@
                                 @endif
 
                                 <br/> <span>{{$item->mainImg_caption}}</span>
+                                <br/>
                             </div>
                             <div class="col-sm-8">
 
