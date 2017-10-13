@@ -123,7 +123,14 @@
 
 
                         <div class="row">
-                            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
+                            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">
+
+                                    @if( $item->videoPath !=null)
+                                        {{$item->videoPath}}
+                                    @else
+                                    <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
+                                @endif
+
                                 <br/> <span>{{$item->mainImg_caption}}</span>
                             </div>
                             <div class="col-sm-8">
