@@ -32,7 +32,7 @@
         <h1 class="main-article-titles Ripper" >
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
-        <p class="subheader-main Bebas">{{ ucfirst($item->subHead) }}</p>
+        <p class="subheader-main Bebas">{{ ucwords($item->subHead) }}</p>
         {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
