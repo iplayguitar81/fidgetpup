@@ -1288,7 +1288,7 @@ td.score-link{
 
 
 .form-group label {
-    font-family: Bebas;
+    font-family: segoe;
     font-size: 2em;
 }
 
