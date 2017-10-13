@@ -125,6 +125,25 @@ ul.share-buttons .sr-only {
     overflow: hidden;
 }
 
+    .nav-tabs{
+        background-color:#161616;
+    }
+    .tab-content{
+        background-color:#303136;
+        color:#fff;
+        padding:5px
+    }
+    .nav-tabs > li > a{
+        border: medium none;
+    }
+    .nav-tabs > li > a:hover{
+        background-color: #303136 !important;
+        border: medium none;
+        border-radius: 0;
+        color:#fff;
+    }
+
+
 .fb_iframe_widget_fluid span, iframe.fb_ltr { width: 95% !important; }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
