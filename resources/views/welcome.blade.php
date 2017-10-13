@@ -9,114 +9,6 @@
 
 <div class="col-md-8">
 
-
-
-    {{--<h2 id="latest_games" class="Ripper">latest games</h2>--}}
-
-    {{--<div id="owl-demo" class="owl-carousel owl-theme">--}}
-        {{--@foreach($scores as $item)--}}
-
-            {{--@php--}}
-                {{--$versus_or_at="";--}}
-                {{--$away_nick_dash="$item->afname";--}}
-                {{--$home_nick_dash="";--}}
-                {{--$home_or_away="";--}}
-                {{--$win_or_loss="";--}}
-
-        {{--$game_date = new DateTime($item->datey, new DateTimeZone('America/Los_Angeles'));--}}
-        {{--$game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));--}}
-        {{--$game_date = $game_date->format('M jS Y');--}}
-
-
-            {{--@endphp--}}
-
-
-
-            {{--@if ($item->h_initials=='POR')--}}
-                {{--@php--}}
-                    {{--$versus_or_at="VS.";--}}
-                {{--@endphp--}}
-
-                {{--@if($item->htotal > $item->atotal)--}}
-                    {{--@php--}}
-                        {{--$win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";--}}
-
-                    {{--@endphp--}}
-                {{--@else--}}
-                    {{--@php--}}
-                        {{--$win_or_loss ="";--}}
-                    {{--@endphp--}}
-                {{--@endif--}}
-                {{--@if($item->htotal < $item->atotal)--}}
-                    {{--@php--}}
-                        {{--$win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";--}}
-
-                    {{--@endphp--}}
-
-
-                {{--@endif--}}
-
-                {{--@php--}}
-                    {{--$home_or_away = $item->afname.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$item->htotal."</span>";--}}
-                {{--@endphp--}}
-
-
-            {{--@endif--}}
-
-
-            {{--@if ($item->a_initials=='POR')--}}
-                {{--@php--}}
-                    {{--$versus_or_at="@";--}}
-                {{--@endphp--}}
-
-                {{--@if($item->atotal > $item->htotal)--}}
-                    {{--@php--}}
-                        {{--$win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";--}}
-
-                    {{--@endphp--}}
-                {{--@else--}}
-                    {{--@php--}}
-                        {{--$win_or_loss ="";--}}
-                    {{--@endphp--}}
-                {{--@endif--}}
-                {{--@if($item->atotal < $item->htotal)--}}
-                    {{--@php--}}
-                        {{--$win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";--}}
-
-                    {{--@endphp--}}
-
-
-                {{--@endif--}}
-
-                {{--@php--}}
-                    {{--$home_or_away = 'portland trailblazers'.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/>'.$item->hfname.'<span class='box_total_h2'>".$item->htotal."</span>";--}}
-                {{--@endphp--}}
-
-
-            {{--@endif--}}
-
-
-
-
-            {{--<div class="item">--}}
-
-                {{--<table class="header_last_game">--}}
-                    {{--<tr><th colspan="3">{{$game_date}}</th></tr>--}}
-                    {{--<tr><td><span class="initials">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>--}}
-                    {{--<tr><td colspan="3" class="score-link"><a class="btn btn-danger btn-xs" role="button" aria-pressed="true" href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Box score</a></td></tr>--}}
-                {{--</table>--}}
-
-
-            {{--</div>--}}
-
-
-
-
-        {{--@endforeach--}}
-    {{--</div>--}}
-
-
-
     <br/>
 
     @if(Session::has('message'))
@@ -124,8 +16,6 @@
             {{Session::get('message')}}
         </div>
     @endif
-
-
 
 
     @foreach($main as $item)
@@ -172,27 +62,22 @@
         {{--*/ @ $rate_sum = 0; $rate_count=0; $rate_avg=0; $rate_pct=0;  /*--}}
 
 
-        @foreach($ratings as $rating)
-        @if($rating->post_id ==$item->id)
+        {{--@foreach($ratings as $rating)--}}
+        {{--@if($rating->post_id ==$item->id)--}}
 
      {{--*/ @ $rate_sum+=$rating->rating; $rate_count++; $rate_avg=$rate_sum/$rate_count; $rate_pct=($rate_avg/5)*100 /*--}}
-
-
-
+            {{----}}
 
             {{--<p>{{$rating->rating}}</p>--}}
             {{--<p>{{$rating->rate_message}}</p>--}}
 
-            @else
+            {{--@else--}}
 
 
-            @endif
+            {{--@endif--}}
 
 
-        @endforeach
-
-
-        <br/>
+        {{--@endforeach--}}
 
 
         {{--<div class="row">--}}
@@ -209,7 +94,7 @@
 
         {{--</div>--}}
 
-        <br/>
+
 
 
 
@@ -231,17 +116,12 @@
 
         <button type="submit" class="btn center-block btn-md" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" ><i class="fa fa-btn fa-comment"></i> Comments</button>
         <br/>
+        <br/>
+
         <hr>
     </article>
 
     @endforeach
-
-<br/>
-
-
-
-
-
 
 
             <h2 class="Bebas text-center"><a href="{{ route('posts.news') }}">More Stories...</a></h2>
