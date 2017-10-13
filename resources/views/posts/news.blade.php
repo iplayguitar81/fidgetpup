@@ -123,14 +123,14 @@
 
 
                         <div class="row">
-                            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">
+                            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></a>
 
                                     @if( $item->videoPath !=null)
                                         <div class="video-container">
                                         {!! $item->videoPath !!}
                                         </div>
                                     @else
-                                    <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
+                                    <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive">
                                 @endif
 
                                 <br/> <span>{{$item->mainImg_caption}}</span>
