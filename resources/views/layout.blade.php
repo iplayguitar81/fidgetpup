@@ -1489,7 +1489,7 @@ em.caption-em{
                         <li>
 
                         @if (Auth::guest())
-                            <li><a href="{{url('/login')}}"><i class="fa fa-btn fa-sign-in"></i> LOGIN</a></li>
+                            <li><a href="{{url('/login')}}"><i class="fa fa-btn fa-sign-in"></i> Login</a></li>
 
                         @else
 
