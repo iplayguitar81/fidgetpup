@@ -1294,7 +1294,7 @@ td.score-link{
 
 .secondary-posts-title{
 
-    font-family:Bebas;
+    font-family:segoe;
     font-size: 3em;
 }
 
