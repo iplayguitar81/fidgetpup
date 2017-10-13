@@ -55,8 +55,8 @@
 
                         <div class="row">
                             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">
-                                    @if($item->videoPath !=null)
-                                        <span>{{$item->videoPath}}</span>
+                                    @if( $item->videoPath !=null)
+                                        {{$item->videoPath}}
                                         @else
                                         <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                                         @endif
