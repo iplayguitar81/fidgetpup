@@ -45,7 +45,8 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#449
         position: absolute;
         top:0;
         left: 0;
-        width: 95%;
+        /*works better without a width here...*/
+        /*width: 95%;*/
         height: 100%;
     }
 
