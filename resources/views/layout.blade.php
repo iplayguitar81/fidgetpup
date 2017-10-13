@@ -1444,11 +1444,11 @@ em.caption-em{
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li @if(\Request::url()==='https://trailblazersfans.com') class='active' @else  @endif><a href="{{url('/')}}">HOME</a></li>
-                <li @if(\Request::url()==='https://trailblazersfans.com/about') class='active' @else  @endif><a href="{{url('/about')}}">ABOUT</a></li>
+                <li @if(\Request::url()==='https://trailblazersfans.com') class='active' @else  @endif><a href="{{url('/')}}">Home</a></li>
+                <li @if(\Request::url()==='https://trailblazersfans.com/about') class='active' @else  @endif><a href="{{url('/about')}}">About</a></li>
 
-                <li @if(\Request::url()==='https://trailblazersfans.com/news') class='active' @else  @endif><a href="{{url('/news')}}">NEWS</a></li>
-                <li @if(\Request::url()==='https://trailblazersfans.com/contact') class='active' @else  @endif><a href="{{url('/contact')}}">CONTACT</a></li>
+                <li @if(\Request::url()==='https://trailblazersfans.com/news') class='active' @else  @endif><a href="{{url('/news')}}">News</a></li>
+                <li @if(\Request::url()==='https://trailblazersfans.com/contact') class='active' @else  @endif><a href="{{url('/contact')}}">Contact</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-search"></i></a>
@@ -1479,7 +1479,7 @@ em.caption-em{
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-gear"></i>
 @if(Auth::guest())
 
-    LOGIN
+    Login
           @else
                         {{Auth::user()->name}}
 
