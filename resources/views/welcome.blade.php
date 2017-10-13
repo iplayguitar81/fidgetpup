@@ -232,7 +232,9 @@
         <button type="submit" class="btn center-block btn-md" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" ><i class="fa fa-btn fa-comment"></i> Comments</button>
 
         <hr>
-<br/>
+        <br/>
+        <br/>
+
     </article>
 
     @endforeach
