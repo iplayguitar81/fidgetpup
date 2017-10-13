@@ -32,6 +32,23 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#449
     .main-contain{
 
     }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .main-article-titles a{
         color: silver;
         text-shadow: #000000 2px 1px 2px;
