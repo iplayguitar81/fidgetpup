@@ -286,7 +286,7 @@ div.article-texterson2 p:first-letter{color:#85f665;font-size:1.7em;text-shadow:
 }
 
 .Bebas{
-    font-family: 'Bebas' !important;
+    font-family: 'segoe' !important;
 }
 
 .subheader-main.Bebas{
