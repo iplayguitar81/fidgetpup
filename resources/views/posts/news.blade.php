@@ -126,7 +126,9 @@
                             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">
 
                                     @if( $item->videoPath !=null)
+                                        <div class="video-container">
                                         {!! $item->videoPath !!}
+                                        </div>
                                     @else
                                     <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                                 @endif
