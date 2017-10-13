@@ -1479,7 +1479,7 @@ em.caption-em{
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-gear"></i>
 @if(Auth::guest())
 
-    Login
+    LOGIN
           @else
                         {{Auth::user()->name}}
 
@@ -1506,7 +1506,7 @@ em.caption-em{
                                         <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
 
                                     @endif
-                                    <i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                    <i class="fa fa-btn fa-sign-out"></i>LOGOUT</a></li>
 
 
                             @endif
