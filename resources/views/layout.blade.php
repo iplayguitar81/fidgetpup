@@ -1407,7 +1407,7 @@ em.caption-em{
         position: relative;
     }
 
-    .count {
+    .fb-comments-count {
         position: absolute;
         top: 0;
         right: 0;
