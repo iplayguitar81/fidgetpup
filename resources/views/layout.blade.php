@@ -1402,6 +1402,27 @@ em.caption-em{
 }
 
 
+    .count-icon {
+        display: inline-block;
+        position: relative;
+    }
+
+    .count {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: 16px;
+        width: 16px;
+
+        background: red;
+        border-radius: 8px;
+
+        font-size: 12px;
+        text-align: center;
+    }
+
+
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
          font-family: 'FabFelt';
