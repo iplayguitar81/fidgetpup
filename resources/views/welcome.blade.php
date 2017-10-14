@@ -117,6 +117,8 @@
         <button type="submit" class="btn center-block btn-md" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" ><span class="count-icon"><i class="fa fa-2x fa-comment"></i><span class="fb-comments-count" data-href="https://dev.fidgetspinnerdog.com/posts/{{$item->id}}"></span></span>Comments </button>
 
         <span class="fb-comments-count" data-href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></span>
+
+        <fb:comments-count href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></fb:comments-count>
         <br/>
         <br/>
 
