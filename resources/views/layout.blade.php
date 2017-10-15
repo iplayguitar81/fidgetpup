@@ -1422,6 +1422,12 @@ em.caption-em{
         text-align: center;
     }
 
+    .twitter-timeline{
+
+        with: 90% !important;
+
+    }
+
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
