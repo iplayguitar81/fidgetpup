@@ -1428,9 +1428,11 @@ em.caption-em{
 
     }
 
-    .facebook-feed{
-
-        width: 90% !important;
+    .fb-page, .fb-page iframe[style], .fb-page span {
+        width: 100% !important;
+    }
+    .fb-comments, .fb-comments iframe[style], .fb-comments span {
+        width: 100% !important;
     }
 
 
