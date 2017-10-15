@@ -1424,7 +1424,7 @@ em.caption-em{
 
     .twitter-timeline{
 
-        with: 90% !important;
+        width: 90% !important;
 
     }
 
