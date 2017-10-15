@@ -30,7 +30,7 @@
             </div>
             <div id="menu1" class="tab-pane">
                 <div class="row">
-                    <div class="">
+                    <div class="facebook-feed">
                         <div class="fb-page" data-href="https://www.facebook.com/GhostHits/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GhostHits/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GhostHits/">Buddy The Balancing Wonder Dog</a></blockquote></div>
                     </div>
 
