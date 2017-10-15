@@ -1415,7 +1415,7 @@ em.caption-em{
         height: 16px;
         width: 16px;
 
-        background: red;
+        background: #85f665;
         border-radius: 8px;
 
         font-size: 12px;
