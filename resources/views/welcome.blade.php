@@ -112,7 +112,7 @@
 
        <p class="article-texterson">{{$variable}} ...</p>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
-            <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+            <a class="btn btn-success btn-lg active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
         <button type="submit" class="btn center-block btn-lg" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" ><span class="count-icon"><i class="fa fa-2x fa-comment"></i> <span class="fb-comments-count" data-href="https://dev.fidgetspinnerdog.com/posts/{{$item->id}}/{{str_slug($item->title)}}"></span></span> Comments </button>
 
