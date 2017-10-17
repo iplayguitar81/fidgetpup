@@ -9,8 +9,6 @@
 
 <div class="col-md-8">
 
-    <br/>
-
     @if(Session::has('message'))
         <div class="alert alert-info" style="color:red;">
             {{Session::get('message')}}
