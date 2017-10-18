@@ -841,7 +841,7 @@ a.boxscore_link {
 .article-texterson {
     font-size: 1.2em;
     line-height: 1.2em;
-    text-align: justify;
+    text-align: center;
     font-family: 'Trebuchet MS', Arial, Tahoma;
 }
 
