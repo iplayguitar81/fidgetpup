@@ -1664,11 +1664,11 @@ em.caption-em{
 </div>
 
 
-<div class="container-fluid" style="text-align:center;">
+
     <div id="footsy"></div>
 
     @include('footer')
-    </div>
+
 
 
 <script src="{{url('/js/jquery.js')}}"></script>
