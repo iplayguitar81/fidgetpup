@@ -1409,16 +1409,13 @@ em.caption-em{
 
     .fb-comments-count {
         position: absolute;
-        top: 0;
-        right: 0;
-
-        height: 16px;
-        width: 16px;
-
+        top: .8em;
+        right: .5em;
+        height: 1.5em;
+        width: 2.5em;
         background: #85f665;
         border-radius: 8px;
-
-        font-size: 12px;
+        font-size: .8em;
         text-align: center;
     }
 
