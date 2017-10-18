@@ -845,6 +845,10 @@ a.boxscore_link {
     font-family: 'Trebuchet MS', Arial, Tahoma;
 }
 
+.panel-footer{
+    text-align:center;
+}
+
 .uk-accordion-title {
     font-size: 1em !important
 }
