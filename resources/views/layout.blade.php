@@ -1412,7 +1412,7 @@ em.caption-em{
         top: .8em;
         right: .5em;
         height: 1.5em;
-        width: 2.5em;
+        width: 2.2em;
         background: #85f665;
         border-radius: 8px;
         font-size: .8em;
