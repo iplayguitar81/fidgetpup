@@ -839,10 +839,10 @@ a.boxscore_link {
 }
 
 .article-texterson {
-    font-size: 1.725em;
-    line-height: 1.7em;
-    font-family: "Times New Roman", Georgia, Tahoma;
-    display: block
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: justify;
+    font-family: 'Trebuchet MS', Arial, Tahoma;
 }
 
 .uk-accordion-title {
