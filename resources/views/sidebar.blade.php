@@ -38,19 +38,3 @@
             </div>
 
         </div>
-
-
-
-
-
-<script>
-    $( window ).resize(function() {
-        var container_width = $('#facebook-feed').width();
-        $('#facebook-feed').html('<div class="fb-page" data-href="https://www.facebook.com/GhostHits/" data-width="' + container_width + '" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/GhostHits/">Buddy The Balancing Wonder Dog</a></blockquote></div></div>');
-        FB.XFBML.parse();
-    });
-
-</script>
-
-
-
