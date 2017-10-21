@@ -12,11 +12,11 @@
     @foreach($news as $item)
 
         <div class="row">
-            <div class="col-sm-4"><h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></a></h2><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive">
+            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                 <span>{{$item->mainImg_caption}}</span>
             </div>
             <div class="col-sm-8">
-                <h3 class="title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h3>
+                <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h2>
                 <p class="text-muted">{{$item->subHead}}</p>
                 <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                 <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
