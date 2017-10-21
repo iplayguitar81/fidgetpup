@@ -16,13 +16,13 @@
 
     @foreach($main as $item)
 
-        @php
-        $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-        $game_date = $game_date->format('M jS Y');
+        {{--@php--}}
+        {{--$game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));--}}
+        {{--$game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));--}}
+        {{--$game_date = $game_date->format('M jS Y');--}}
 
 
-        @endphp
+        {{--@endphp--}}
 
 
 
