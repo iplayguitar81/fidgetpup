@@ -14,28 +14,29 @@ return $game_date;
 }
 
 
-//provide article author to app DRY it up...
+//provides article author to app DRY it up...
 
 function written_by($author) {
 
     if($author != null) {
-
         $writer = App\User::find($author)->name;
-
 
     }
 
 else {
-
         $writer = "admin";
-
 }
-
 
     return $writer;
 
+}
 
+function snippet($body){
 
+    $variable= strip_tags($body);
+    $variable =substr($variable,0, 50);
+
+    return $variable;
 
 }
 
