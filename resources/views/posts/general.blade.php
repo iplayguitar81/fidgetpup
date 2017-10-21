@@ -29,7 +29,7 @@
     <br/>
 
     <div class="buttons-show">
-    <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('/news')}}';" >Back to All News</button>
+    <button type="submit" class="btn btn-success center-block btn-md" onclick="window.location='{{url('/news')}}';" >Back to All News</button>
     </div>
 
 @endsection
