@@ -1,11 +1,9 @@
             <div class="panel text-center">
             <div class="panel-heading">
                 <h3 class="panel-title">Regis' Corner</h3></div>
-
             <p>Coming Soon</p>
 
         </div>
-
 
         <br/>
         <hr>
@@ -36,5 +34,4 @@
 
                 </div>
             </div>
-
         </div>
