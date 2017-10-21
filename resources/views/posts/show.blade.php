@@ -1,15 +1,7 @@
 @extends('layout')
-
-
 @section('title', $post->title)
 @section('content')
 
-
-    @php
-        $game_date = new DateTime($post->created_at, new DateTimeZone('America/Los_Angeles'));
-        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-        $game_date = $game_date->format('M jS Y');
-    @endphp
 <div class="row">
     <div class="col-md-12">
 
@@ -18,20 +10,10 @@
         <p class="subheader-main Bebas">{{ $post->subHead}}</p>
 
         <p class="uk-article-meta" style="text-align:center;">
-            Written by <?
-            //below is one way to get the name of the author.....
-            ?>
+            Written by
 
-           @if($post->user_id != null)
-            @php
-            $author = App\User::find($post->user_id)->name;
-            @endphp
+            {{written_by($post->user_id)}}
 
-            {{$author}}
-            @endif
-            {{--@foreach($records as $record)--}}
-            {{--{{$record->name}}--}}
-            {{--@endforeach--}}
             on {{ gameDate($post->created_at) }}
         </p>
         <ul class="share-buttons">
