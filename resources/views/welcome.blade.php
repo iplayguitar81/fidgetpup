@@ -1,9 +1,6 @@
 @extends('layout')
 @section('title', 'Home')
-
 @section('content')
-
-
 
 <div class="col-md-8">
 
@@ -16,11 +13,7 @@
 
     @foreach($main as $item)
 
-
-
-
     <article class="text-center">
-
 
         <h1 class="main-article-titles Ripper" >
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
@@ -29,12 +22,6 @@
 
         <p class="">Written by
 
-
-            {{--@if($item->user_id != null)--}}
-            {{--@php $author = App\User::find($item->user_id)->name; @endphp--}}
-
-            {{--{{$author}}--}}
-            {{--@endif--}}
 
             {{written_by($item->user_id)}}
 
@@ -86,10 +73,6 @@
 
         {{--</div>--}}
 
-
-
-
-
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
@@ -111,9 +94,6 @@
 
 
             <h2 class="Bebas text-center"><a href="{{ route('posts.news') }}">More Stories...</a></h2>
-
-
-
 
 
         <br/>
@@ -139,10 +119,6 @@
             loop:true,
             keyPress:true
         })});
-
-
-
-
 
 
 </script>
