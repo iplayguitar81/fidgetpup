@@ -12,7 +12,7 @@
     @foreach($news as $item)
 
         <div class="row">
-            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
+            <div class="col-sm-4"><h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></a></h2><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive">
                 <span>{{$item->mainImg_caption}}</span>
             </div>
             <div class="col-sm-8">
