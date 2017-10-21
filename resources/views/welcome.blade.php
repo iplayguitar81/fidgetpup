@@ -30,13 +30,13 @@
         <p class="">Written by
 
 
-            @if($item->user_id != null)
-            @php $author = App\User::find($item->user_id)->name; @endphp
+            {{--@if($item->user_id != null)--}}
+            {{--@php $author = App\User::find($item->user_id)->name; @endphp--}}
 
-            {{$author}}
-            @endif
+            {{--{{$author}}--}}
+            {{--@endif--}}
 
-            {{}}
+            {{written_by($item->user_id)}}
 
             on {{ gameDate($item->created_at)}}</p>
 
