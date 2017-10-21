@@ -1,5 +1,3 @@
-
-
 @extends('layout')
 @section('title', 'Home')
 
@@ -22,7 +20,11 @@
         $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
         $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
         $game_date = $game_date->format('M jS Y');
+
+
         @endphp
+
+
 
     <article class="text-center">
 
@@ -44,7 +46,7 @@
             @endif
 
 
-            on {{ $game_date }}</p>
+            on {{ gameDate($item->created_at)}}</p>
 
 
         @if( $item->videoPath !=null)
@@ -100,13 +102,13 @@
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
 
-@php
+            @php
 
             $variable= strip_tags($item->body);
             $variable =substr($variable,0, 150);
        // $variable = (str_limit($item->body, 100));
        // $variable= htmlentities($variable);
-  @endphp
+            @endphp
 
        <p class="article-texterson">{{$variable}} ...</p>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
