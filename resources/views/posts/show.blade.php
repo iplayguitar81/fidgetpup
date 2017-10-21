@@ -32,7 +32,7 @@
             {{--@foreach($records as $record)--}}
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
-            on {{ $game_date }}
+            on {{ gameDate($post->created_at }}
         </p>
         <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftrailblazersfans.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="{{url('images/Facebook.png')}}"></a></li>
