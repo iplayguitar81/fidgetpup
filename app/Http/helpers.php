@@ -31,10 +31,21 @@ else {
 
 }
 
+//short news feed snippet 50 characters...
 function snippet($body){
 
     $variable= strip_tags($body);
     $variable =substr($variable,0, 50);
+
+    return $variable;
+
+}
+
+//longer news feed snippet for welcome.php page...
+function snippety($body){
+
+    $variable= strip_tags($body);
+    $variable =substr($variable,0, 150);
 
     return $variable;
 
