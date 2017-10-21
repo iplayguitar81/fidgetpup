@@ -22,19 +22,6 @@
 
                     @foreach($news as $item)
 
-
-                        @if($item->user_id != null)
-
-                            @php
-                             $author = App\User::find($item->user_id)->name;
-
-                             @endphp
-
-
-                        @endif
-
-
-
                         @php
                             $variable= strip_tags($item->body);
                             $variable =substr($variable,0, 50);
@@ -88,17 +75,6 @@
                     @foreach($nbanews as $item)
 
 
-                        @if($item->user_id != null)
-                            <? $author = App\User::find($item->user_id)->name; ?>
-
-
-                        @endif
-
-
-
-
-
-
                         @php
                             $variable= strip_tags($item->body);
                             $variable =substr($variable,0, 50);
@@ -124,7 +100,7 @@
 
 
                                 <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ ucwords($item->title)}}</a></h2>
-                                <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{gameDate($item->created_at)}} </p>
+                                <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                                 <p class="text-muted">{{$item->subHead}}</p>
 
                                 <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
@@ -170,13 +146,6 @@
 
                     @foreach($former_players as $item)
 
-
-                        @if($item->user_id != null)
-                            <? $author = App\User::find($item->user_id)->name; ?>
-
-
-                        @endif
-
                         @php
                             $variable= strip_tags($item->body);
                             $variable =substr($variable,0, 50);
@@ -200,7 +169,7 @@
 
 
                                 <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ ucwords($item->title)}}</a></h2>
-                                <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{gameDate($item->created_at)}} </p>
+                                <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                                 <p class="text-muted">{{$item->subHead}}</p>
 
                                 <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
@@ -230,13 +199,6 @@
                     @foreach($retronews as $item)
 
 
-                        @if($item->user_id != null)
-                            <? $author = App\User::find($item->user_id)->name; ?>
-
-
-                        @endif
-
-
 
                         @php
                             $variable= strip_tags($item->body);
@@ -262,7 +224,7 @@
 
 
                                 <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ ucwords($item->title)}}</a></h2>
-                                <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{gameDate($item->created_at)}} </p>
+                                <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                                 <p class="text-muted">{{$item->subHead}}</p>
 
                                 <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
