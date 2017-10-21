@@ -11,12 +11,6 @@
 
     @foreach($news as $item)
 
-        @if($item->user_id != null)
-            <? $author = App\User::find($item->user_id)->name; ?>
-
-
-        @endif
-
         @php
             $variable= strip_tags($item->body);
             $variable =substr($variable,0, 50);
@@ -34,7 +28,7 @@
 
                 <h3 class="title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h3>
                 <p class="text-muted">{{$item->subHead}}</p>
-                <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
+                <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{$game_date}} </p>
                 <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
 
