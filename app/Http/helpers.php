@@ -20,6 +20,8 @@ function written_by($author) {
 
     $writer = App\User::find($author)->name;
 
+    return $writer;
+
 }
 
 
