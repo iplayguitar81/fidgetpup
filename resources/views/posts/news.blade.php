@@ -49,10 +49,7 @@
 
                             <hr/>
 
-
                         </div>
-
-
 
 
                     @endforeach
@@ -65,9 +62,7 @@
                 <div id="menu1" class="tab-pane fade">
                     <h3>league news</h3>
 
-
                     @foreach($nbanews as $item)
-
 
                         <div class="row">
                             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></a>
@@ -103,10 +98,7 @@
                         </div>
 
 
-
-
                     @endforeach
-
 
 
                     <br/>
@@ -202,15 +194,12 @@
 
                                 <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
-
                             </div>
                             <br/>
                             <hr/>
 
 
                         </div>
-
-
 
 
                     @endforeach
