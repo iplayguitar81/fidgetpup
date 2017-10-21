@@ -11,9 +11,7 @@
 
         <p class="uk-article-meta" style="text-align:center;">
             Written by
-
             {{written_by($post->user_id)}}
-
             on {{ gameDate($post->created_at) }}
         </p>
         <ul class="share-buttons">
@@ -28,10 +26,6 @@
         <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'><br/><span>{{$post->mainImg_caption}}</span></p>
 
         <p>{!! $post->videoPath !!}</p>
-
-
-
-
 
         <br/>
         <div class="center-block text-center">
@@ -276,8 +270,5 @@
     });
 
 </script>
-
-
-
 
 
