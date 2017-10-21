@@ -3,10 +3,7 @@
 @section('content')
 
     <h1 class="article-title-show">buddy news</h1>
-
-
     <p class="text-center">Here you can get the inside scoop on all of the latest buddy the balancing wonder dog news and current happenings!</p>
-    <br/>
     <hr>
 
     @foreach($news as $item)
