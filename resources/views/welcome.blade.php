@@ -16,13 +16,6 @@
 
     @foreach($main as $item)
 
-        {{--@php--}}
-        {{--$game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));--}}
-        {{--$game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));--}}
-        {{--$game_date = $game_date->format('M jS Y');--}}
-
-
-        {{--@endphp--}}
 
 
 
@@ -33,9 +26,7 @@
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
         <p class="subheader-main Bebas">{{ ucwords($item->subHead) }}</p>
-        {{--{{$posts-> $item->user }}--}}
 
-        {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
         <p class="">Written by
 
 
@@ -45,6 +36,7 @@
             {{$author}}
             @endif
 
+            {{}}
 
             on {{ gameDate($item->created_at)}}</p>
 
@@ -102,16 +94,9 @@
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
 
-            @php
 
-            $variable= strip_tags($item->body);
-            $variable =substr($variable,0, 150);
-       // $variable = (str_limit($item->body, 100));
-       // $variable= htmlentities($variable);
-            @endphp
+       <p class="article-texterson">{{snippety($item->body)}} ...</p>
 
-       <p class="article-texterson">{{$variable}} ...</p>
-      {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
             <a class="btn btn-success btn-lg active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
         <span type="submit" class="btn center-block btn-md" onclick="window.location='{{ route('posts.show', [$item->id, str_slug($item->title)]) }}/#fb-comments-show';" ><span class="count-icon"><i class="fa fa-3x fa-comment"></i> <span class="fb-comments-count" data-href="https://dev.fidgetspinnerdog.com/posts/{{$item->id}}/{{str_slug($item->title)}}"></span></span> Comments </span>
