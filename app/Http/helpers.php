@@ -18,9 +18,24 @@ return $game_date;
 
 function written_by($author) {
 
-    $writer = App\User::find($author)->name;
+    if($author != null) {
+
+        $writer = App\User::find($author)->name;
+
+
+    }
+
+else {
+
+        $writer = "admin";
+
+}
+
 
     return $writer;
+
+
+
 
 }
 
