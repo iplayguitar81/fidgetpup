@@ -1,5 +1,7 @@
 <?php
 
+//provide the date in preferred format for blogs and elsewhere on site where date is part of dataset...
+
 function gameDate($date) {
 
 $gamedate = new DateTime($date, new DateTimeZone('America/Los_Angeles'));
@@ -11,6 +13,14 @@ return $game_date;
 
 }
 
+
+//provide article author to app DRY it up...
+
+function written_by($author) {
+
+    $writer = App\User::find($author)->name;
+
+}
 
 
 ?>
