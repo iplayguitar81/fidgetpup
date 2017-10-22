@@ -52,19 +52,19 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#449
 
     .main-article-titles a{
         color: silver;
-        text-shadow: #000000 2px 1px 2px;
+        text-shadow: #000000 1px 1px;
         text-decoration: none;
         font-family: eightybitty !important;
         font-size: 1.4em;
     }
 .main-article-titles a:hover {
     color: #85f665;
-    text-shadow: #000000 2px 1px 2px;
+    text-shadow: #000000 1px 1px;
 }
 .article-title-show {
     color: silver;
     text-shadow: #000000 1px 1px;
-    font-size: 2em !important;
+    font-size: 2.1em !important;
     text-align: center;
     font-family: eightybitty;
 }
