@@ -38,7 +38,8 @@
 
 
                                 <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ ucwords($item->title)}}</a></h2>
-                                <p class="text-muted">{{$item->subHead}}</p>
+                                <br/>
+                                <span class="text-muted">{{$item->subHead}}</span>
                                 <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
 
 
