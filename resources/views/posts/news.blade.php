@@ -8,7 +8,7 @@
 
     <div class="container text-center">
 
-        <div class="row">
+
 
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">team news</a></li>
@@ -215,7 +215,7 @@
             </div>
 
 
-        </div>
+
 
     </div>
 
