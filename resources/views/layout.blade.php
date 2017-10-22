@@ -1340,7 +1340,7 @@ td.score-link{
 }
 
 .secondary-posts-title a{
-    font-size: .75em;
+    font-size: .5em;
 }
 
 .secondary-article-img{
