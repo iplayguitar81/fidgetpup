@@ -1343,6 +1343,9 @@ td.score-link{
     font-size: .5em;
 }
 
+
+
+
 .secondary-article-img{
 
     width:97%;
