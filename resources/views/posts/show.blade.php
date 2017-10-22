@@ -2,7 +2,7 @@
 @section('title', $post->title)
 @section('content')
 
-<div class="row">
+
     <div class="col-md-12">
 
     <article class="center-block">
@@ -87,7 +87,7 @@
     </div>
 </div>
 
-</div>
+
 
 
 
