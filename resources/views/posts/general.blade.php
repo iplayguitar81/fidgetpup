@@ -8,7 +8,7 @@
 
     @foreach($news as $item)
 
-        <div class="row">
+
             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                 <br/>
                 <span>{{$item->mainImg_caption}}</span>
@@ -20,7 +20,7 @@
                 <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
             </div>
 
-        </div>
+
         <hr/>
     @endforeach
 
