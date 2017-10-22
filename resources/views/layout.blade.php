@@ -63,8 +63,8 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#449
 }
 .article-title-show {
     color: silver;
-    text-shadow: #000000 2px 1px 2px;
-    font-size: 2.8em !important;
+    text-shadow: #000000 1px 1px;
+    font-size: 1.8em !important;
     text-align: center;
     font-family: eightybitty;
 }
