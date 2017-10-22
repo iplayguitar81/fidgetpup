@@ -74,7 +74,7 @@
                                     @else
                                     <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive">
                                 @endif
-
+                                <br/>
                               <span>{{$item->mainImg_caption}}</span>
 
                             </div>
@@ -136,6 +136,7 @@
                                         <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive">
                                     @endif
 
+                                    <br/>
                                     <span>{{$item->mainImg_caption}}</span>
                             </div>
                             <div class="col-sm-8">
@@ -182,7 +183,7 @@
                                     @else
                                         <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive">
                                     @endif
-
+                                    <br/>
                                     <span>{{$item->mainImg_caption}}</span>
                             </div>
                             <div class="col-sm-8">
@@ -211,8 +212,6 @@
                 </div>
 
             </div>
-
-
 
 
         </div>
