@@ -888,6 +888,19 @@ h2.story_h2 {
     margin-right: auto;
 }
 
+    @media (max-width: 767px) {
+        /*body {*/
+            /*margin-left: 5px;*/
+            /*margin-right: 5px;*/
+        /*}*/
+
+        .row {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+
+
 @media (max-width: 568px){td.hide_box_column{display:none}}
 /**
  * Print
