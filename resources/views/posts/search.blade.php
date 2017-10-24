@@ -19,7 +19,7 @@
     @foreach($results2 as $result)
 
         <article>
-        <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{$result->title}}</a></h3>
+        <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ucwords($result->title)}}</a></h3>
         <p>Written&nbsp;
             @if($result->user_id != null)
                 by
