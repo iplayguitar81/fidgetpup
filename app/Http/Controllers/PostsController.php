@@ -619,10 +619,10 @@ class PostsController extends Controller
                 ->appends(['search' => $search]);
 
 
-            $results_empty= $results2->isEmpty();
+
         }
 
-
+        $results_empty= $results2->isEmpty();
 //       //$results_empty= $results2->isEmptyString();
 //        if($search == '' || $search->isEmpty() ){
 //            $results_empty = true;
