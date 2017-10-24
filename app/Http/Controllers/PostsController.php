@@ -606,8 +606,15 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-        if(! empty( $request)) {
+        if(empty( $request)) {
 
+
+
+
+
+        }
+
+        else {
             $search = $request->get('search');
 
 
@@ -616,8 +623,6 @@ class PostsController extends Controller
                 ->orWhere('subhead', 'like', "%$search%")
                 ->paginate(3)
                 ->appends(['search' => $search]);
-
-
 
         }
 
