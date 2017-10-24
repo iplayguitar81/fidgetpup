@@ -606,7 +606,7 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-        if(isNull( $request)) {
+        if(empty( $request)) {
 
 
 
