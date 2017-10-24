@@ -608,7 +608,7 @@ class PostsController extends Controller
 
         $search = $request->get('search');
 
-        if(notNullValue($search) || $search !="") {
+
 
 
 
@@ -620,7 +620,7 @@ class PostsController extends Controller
 
 
 
-        }
+
 
         $results_empty= $results2->isEmpty();
 //       //$results_empty= $results2->isEmptyString();
