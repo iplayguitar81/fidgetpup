@@ -628,6 +628,8 @@ class PostsController extends Controller
 
 
         }
+
+        $results2 ="";
         $results_empty = $results2->isEmpty();
 
 //       //$results_empty= $results2->isEmptyString();
