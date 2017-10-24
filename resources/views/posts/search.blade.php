@@ -49,8 +49,10 @@
 
     @endforeach
 
+    <div class="pagination">{!! $results2->render() !!}</div>
+
 @endif
 
-<div class="pagination">{!! $results2->render() !!}</div>
+
 
 @endsection
