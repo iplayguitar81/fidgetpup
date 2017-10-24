@@ -606,10 +606,9 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-        $search = $request->get('search');
+        if(! empty( $request)) {
 
-
-
+            $search = $request->get('search');
 
 
             $results2 = Post::where('title', 'like', "%$search%")
@@ -619,10 +618,8 @@ class PostsController extends Controller
                 ->appends(['search' => $search]);
 
 
-
-
-
-        $results_empty= $results2->isEmpty();
+            $results_empty = $results2->isEmpty();
+        }
 //       //$results_empty= $results2->isEmptyString();
 //        if($search == '' || $search->isEmpty() ){
 //            $results_empty = true;
