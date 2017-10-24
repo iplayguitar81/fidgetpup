@@ -12,10 +12,10 @@
         <div class="alert alert-danger text-center">
             No Results for your Query Try A Different Search!!!!!!!
         </div>
-    @endif
 
 
 
+@else
     @foreach($results2 as $result)
 
         <?
@@ -48,6 +48,8 @@
         <hr>
 
     @endforeach
+
+@endif
 
 {!! $results2->render() !!}
 
