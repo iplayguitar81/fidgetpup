@@ -19,6 +19,7 @@
     @foreach($results2 as $result)
 
         <article>
+            <div class="col-sm-8">
         <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ucwords($result->title)}}</a></h3>
         <p>Written&nbsp;
             @if($result->user_id != null)
@@ -32,7 +33,7 @@
         </p>
 
         <p>{{snippet($result->body)}}...     <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a></p>
-
+            </div>
 
     </article>
         <br/>
