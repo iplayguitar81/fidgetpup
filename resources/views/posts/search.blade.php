@@ -24,9 +24,7 @@
         <p>Written&nbsp;
             @if($result->user_id != null)
                 by
-                <? $author = App\User::find($result->user_id)->name; ?>
-
-                {{$author}}
+                {{written_by($result->user_id)}}
             @endif
 
             <span class="">{{(gameDate($result->created_at))}}</span>
