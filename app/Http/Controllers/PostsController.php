@@ -608,16 +608,6 @@ class PostsController extends Controller
 
         $search = $request->get('search');
 
-        if(empty( $search) || $request != "+") {
-
-
-
-
-
-        }
-
-        else {
-
 
 
             $results2 = Post::where('title', 'like', "%$search%")
@@ -627,9 +617,9 @@ class PostsController extends Controller
                 ->appends(['search' => $search]);
 
 
-        }
 
-        $results2 ="";
+
+
         $results_empty = $results2->isEmpty();
 
 //       //$results_empty= $results2->isEmptyString();
