@@ -51,6 +51,6 @@
 
 @endif
 
-{{--{!! $results2->render() !!}--}}
+<div class="pagination">{!! $results2->render() !!}</div>
 
 @endsection
