@@ -606,7 +606,9 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-        if(empty( $request) || $request != "+") {
+        $search = $request->get('search');
+
+        if(empty( $search) || $request != "+") {
 
 
 
@@ -615,7 +617,7 @@ class PostsController extends Controller
         }
 
         else {
-            $search = $request->get('search');
+
 
 
             $results2 = Post::where('title', 'like', "%$search%")
