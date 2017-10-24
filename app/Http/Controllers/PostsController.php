@@ -621,6 +621,7 @@ class PostsController extends Controller
        //$results_empty= $results2->isEmptyString();
         if($search == ''){
             $results_empty = true;
+            $results2 = '';
 
         }
 
