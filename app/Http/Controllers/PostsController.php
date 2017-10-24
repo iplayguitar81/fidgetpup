@@ -608,7 +608,7 @@ class PostsController extends Controller
 
         $search = $request->get('search');
 
-        if(!empty($search)) {
+        if(!nullOrEmptyString($search)) {
 
 
 
