@@ -608,16 +608,19 @@ class PostsController extends Controller
 
         $search = $request->get('search');
 
-        $results2 = Post::where('title', 'like', "%$search%")
-            ->orWhere('body', 'like', "%$search%")
-            ->orWhere('subhead', 'like', "%$search%")
-            ->paginate(3)
-            ->appends(['search' => $search])
-        ;
+        if($search->isNotEmpty()) {
+
+            $results2 = Post::where('title', 'like', "%$search%")
+                ->orWhere('body', 'like', "%$search%")
+                ->orWhere('subhead', 'like', "%$search%")
+                ->paginate(3)
+                ->appends(['search' => $search]);
+
+            $results_empty= $results2->isEmpty();
+
+        }
 
 
-
-       $results_empty= $results2->isEmpty();
 //       //$results_empty= $results2->isEmptyString();
 //        if($search == '' || $search->isEmpty() ){
 //            $results_empty = true;
