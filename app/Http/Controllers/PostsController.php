@@ -608,7 +608,7 @@ class PostsController extends Controller
 
         $search = $request->get('search');
 
-        if(!$search->isEmpty()) {
+        if(isNonEmptyString($search)) {
 
             $results2 = Post::where('title', 'like', "%$search%")
                 ->orWhere('body', 'like', "%$search%")
