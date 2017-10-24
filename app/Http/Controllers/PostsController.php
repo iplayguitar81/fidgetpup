@@ -606,9 +606,11 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-        $search = $request->get('search');
 
-        if($search->isNotEmpty()) {
+
+        if($request->isNotEmpty()) {
+
+            $search = $request->get('search');
 
             $results2 = Post::where('title', 'like', "%$search%")
                 ->orWhere('body', 'like', "%$search%")
