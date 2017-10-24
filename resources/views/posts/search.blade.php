@@ -28,7 +28,7 @@
                 {{$author}}
             @endif
 
-            <span class="text-lowercase">{{ucwords(gameDate($result->created_at))}}</span>
+            <span class="">{{(gameDate($result->created_at))}}</span>
         </p>
 
         <p>{{snippet($result->body)}}...     <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a></p>
