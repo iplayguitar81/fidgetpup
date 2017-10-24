@@ -51,6 +51,6 @@
 
 @endif
 
-{!! $results2->render() !!}
+{{--{!! $results2->render() !!}--}}
 
 @endsection
