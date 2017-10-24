@@ -1534,7 +1534,7 @@ em.caption-em{
                         <li>
                             <form class="navbar-form" role="search" action="/search" method="GET">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="search" placeholder="Search" value=null name="srch-term" id="srch-term">
+                                    <input type="text" class="form-control" name="search" placeholder="Search"  name="srch-term" id="srch-term">
                                     <div class="input-group-btn">
                                         <button class="btn btn-success btn-md active" type="submit">Enter</button>
                                     </div>
