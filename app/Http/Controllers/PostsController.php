@@ -627,7 +627,7 @@ class PostsController extends Controller
         $query = Post::select('title', 'body', 'subhead');
 
 // Add name filter
-        $query = is_null($search) ? $query : $query->where('title', 'like', "%$search%")
+        $query = $results_empty=true ? $query : $query->where('title', 'like', "%$search%")
             ->orWhere('body', 'like', "%$search%")
             ->orWhere('subhead', 'like', "%$search%")
             ->paginate(3)
@@ -638,7 +638,7 @@ class PostsController extends Controller
 
         $results2 = $query->all();
 
-      $results_empty = $results2->isEmpty();
+      //$results_empty = $results2->isEmpty();
 
 
         return view('posts.search', compact('results2','search', 'results_empty'));
