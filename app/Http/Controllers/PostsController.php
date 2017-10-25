@@ -606,7 +606,7 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-       // $search = $request->get('search');
+      $search = $request->get('search');
 
 
 //            $results2 = Post::where('title', 'like', "%$search%")
@@ -620,7 +620,7 @@ class PostsController extends Controller
 
 
 
-        $search = Input::get('search', null);
+      //  $search = Input::get('search', null);
 
 
 
@@ -638,7 +638,7 @@ class PostsController extends Controller
 
         $results2 = $query->all();
 
-        $results_empty = is_null($query);
+     //   $results_empty = $results2->isEmpty();
 
 
         return view('posts.search', compact('results2','search', 'results_empty'));
