@@ -623,7 +623,7 @@ class PostsController extends Controller
         $search = Input::get('search', null);
 
 
-        $query = Post::select('fields', 'you', 'need');
+        $query = Post::select('title', 'body', 'subhead');
 
 // Add name filter
         $query = is_null($search) ? $query : $query->where('title', 'like', "%$search%")
