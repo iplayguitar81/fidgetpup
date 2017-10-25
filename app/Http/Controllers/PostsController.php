@@ -606,7 +606,7 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-      $search = $request->all('search');
+      $search = $request->get('search');
 
 
       if(is_null($search)) {
