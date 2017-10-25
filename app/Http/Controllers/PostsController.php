@@ -636,7 +636,7 @@ class PostsController extends Controller
 // Add city filter
         //$query = is_null($city) ? $query : $query->whereCity($city);
 
-        $results2 = $query->all();
+        $results2 = $query->get();
 
       //$results_empty = $results2->isEmpty();
 
