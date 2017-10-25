@@ -606,46 +606,47 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-      //$search = $request->all('search');
+      $search = $request->all('search');
 
 
-//            $results2 = Post::where('title', 'like', "%$search%")
-//                ->orWhere('body', 'like', "%$search%")
-//                ->orWhere('subhead', 'like', "%$search%")
-//                ->paginate(3)
-//                ->appends(['search' => $search]);
+      if(is_null($search)) {
+          $results_empty= true;
+
+      }
+
+      else {
+            $results2 = Post::where('title', 'like', "%$search%")
+                ->orWhere('body', 'like', "%$search%")
+                ->orWhere('subhead', 'like', "%$search%")
+                ->paginate(3)
+                ->appends(['search' => $search]);
+
+          $results_empty= false;
+
+      }
+
+
+
+
+//        $search = Input::get('search', null);
 //
 //
+//
+//        $query = Post::select('title', 'body', 'subhead');
+//
+//// Add name filter
+//        $query = is_null($search) ? $query : $query->where('title', 'like', "%$search%")
+//            ->orWhere('body', 'like', "%$search%")
+//            ->orWhere('subhead', 'like', "%$search%")
+//            ->paginate(3)
+//            ->appends(['search' => $search]);
 
 
+       // $results2 = $query->all();
+
+     //$results_empty = $results2->isEmpty();
 
 
-        $search = Input::get('search', null);
-
-
-
-        $query = Post::select('title', 'body', 'subhead');
-
-// Add name filter
-        $query = is_null($search) ? $query : $query->where('title', 'like', "%$search%")
-            ->orWhere('body', 'like', "%$search%")
-            ->orWhere('subhead', 'like', "%$search%")
-            ->paginate(3)
-            ->appends(['search' => $search]);
-
-// Add city filter
-        //$query = is_null($city) ? $query : $query->whereCity($city);
-
-        $results2 = $query->all();
-
-     $results_empty = $results2->isEmpty();
-
-//        if(is_null($search)){
-//            $results_empty = true;
-//        }
-//        else {
-//            $results_empty = false;
-//        }
 
 
         return view('posts.search', compact('results2','search', 'results_empty'));
