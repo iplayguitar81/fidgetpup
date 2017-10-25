@@ -638,14 +638,14 @@ class PostsController extends Controller
 
         $results2 = $query->all();
 
-   //   $results_empty = $results2->isEmpty();
+     $results_empty = $results2->isEmpty();
 
-        if(is_null($search)){
-            $results_empty = true;
-        }
-        else {
-            $results_empty = false;
-        }
+//        if(is_null($search)){
+//            $results_empty = true;
+//        }
+//        else {
+//            $results_empty = false;
+//        }
 
 
         return view('posts.search', compact('results2','search', 'results_empty'));
