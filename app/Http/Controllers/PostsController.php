@@ -621,8 +621,9 @@ class PostsController extends Controller
                 ->paginate(3)
                 ->appends(['search' => $search]);
 
-          $results_empty= false;
+         // $results_empty= false;
 
+          $results_empty = $results2->isEmpty();
       }
 
 
