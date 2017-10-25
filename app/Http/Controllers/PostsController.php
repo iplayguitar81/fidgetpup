@@ -638,7 +638,7 @@ class PostsController extends Controller
 
         $results2 = $query->all();
 
-        $results_empty = is_null($results2);
+        $results_empty = is_null($query);
 
 
         return view('posts.search', compact('results2','search', 'results_empty'));
