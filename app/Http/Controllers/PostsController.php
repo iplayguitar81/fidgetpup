@@ -606,7 +606,7 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-      $search = $request->get('search');
+      $search = $request->all('search');
 
 
 //            $results2 = Post::where('title', 'like', "%$search%")
@@ -636,7 +636,7 @@ class PostsController extends Controller
 // Add city filter
         //$query = is_null($city) ? $query : $query->whereCity($city);
 
-        $results2 = $query->get();
+        $results2 = $query->all();
 
    //   $results_empty = $results2->isEmpty();
 
