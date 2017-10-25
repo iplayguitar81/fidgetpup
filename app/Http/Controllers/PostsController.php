@@ -606,8 +606,8 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-      $search = $request->get('search');
-
+//      $search = $request->get('search');
+     $search = Input::get('search', null);
 
       if(is_null($search)) {
           $results_empty= true;
@@ -628,7 +628,7 @@ class PostsController extends Controller
 
 
 
-//        $search = Input::get('search', null);
+
 //
 //
 //
