@@ -606,7 +606,7 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-      $search = $request->all('search');
+      //$search = $request->all('search');
 
 
 //            $results2 = Post::where('title', 'like', "%$search%")
@@ -620,7 +620,7 @@ class PostsController extends Controller
 
 
 
-      //  $search = Input::get('search', null);
+        $search = Input::get('search', null);
 
 
 
