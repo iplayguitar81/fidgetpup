@@ -606,30 +606,41 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-        $search = $request->get('search');
+       // $search = $request->get('search');
 
 
-
-            $results2 = Post::where('title', 'like', "%$search%")
-                ->orWhere('body', 'like', "%$search%")
-                ->orWhere('subhead', 'like', "%$search%")
-                ->paginate(3)
-                ->appends(['search' => $search]);
-
-
-
-
-
-        $results_empty = $results2->isEmpty();
-
-//       //$results_empty= $results2->isEmptyString();
-//        if($search == '' || $search->isEmpty() ){
-//            $results_empty = true;
+//            $results2 = Post::where('title', 'like', "%$search%")
+//                ->orWhere('body', 'like', "%$search%")
+//                ->orWhere('subhead', 'like', "%$search%")
+//                ->paginate(3)
+//                ->appends(['search' => $search]);
 //
 //
-//        }
+//        $results_empty = $results2->isEmpty();
 
-        return view('posts.search', compact('results2','search','results_empty'));
+
+
+        $search = Input::get('search', null);
+
+
+        $query = Worker::select('fields', 'you', 'need');
+
+// Add name filter
+        $query = is_null($search) ? $query : $query->where('title', 'like', "%$search%")
+            ->orWhere('body', 'like', "%$search%")
+            ->orWhere('subhead', 'like', "%$search%")
+            ->paginate(3)
+            ->appends(['search' => $search]);
+
+// Add city filter
+        //$query = is_null($city) ? $query : $query->whereCity($city);
+
+        $results2 = $query->get();
+
+
+
+
+        return view('posts.search', compact('results2','search'));
     }
 
 
