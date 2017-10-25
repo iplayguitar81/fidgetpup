@@ -616,7 +616,7 @@ class PostsController extends Controller
 //                ->appends(['search' => $search]);
 //
 //
-//        $results_empty = $results2->isEmpty();
+
 
 
 
@@ -638,10 +638,10 @@ class PostsController extends Controller
 
         $results2 = $query->all();
 
+        $results_empty = $results2->isEmpty();
 
 
-
-        return view('posts.search', compact('results2','search'));
+        return view('posts.search', compact('results2','search', 'results_empty'));
     }
 
 
