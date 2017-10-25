@@ -620,7 +620,8 @@ class PostsController extends Controller
 
 
 
-        $search = Input::get('search', null);
+        $search = Input::all('search', null);
+
 
 
         $query = Post::select('title', 'body', 'subhead');
@@ -635,7 +636,7 @@ class PostsController extends Controller
 // Add city filter
         //$query = is_null($city) ? $query : $query->whereCity($city);
 
-        $results2 = $query->get();
+        $results2 = $query->all();
 
 
 
