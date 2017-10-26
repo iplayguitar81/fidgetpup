@@ -156,7 +156,7 @@ p.second-art-snip{
 }
 
 /*p.article-texterson:first-letter{color:#85f665;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em; font-family:Bebas;}*/
-div.article-texterson2 p:first-letter{color:#85f665;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em;}
+/*div.article-texterson2 p:first-letter{color:#85f665;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em;}*/
 
 
 
