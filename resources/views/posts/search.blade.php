@@ -41,7 +41,7 @@
 
     @endforeach
 
-    {{--<div class="pagination">{!! $results2->render() !!}</div>--}}
+    <div class="pagination">{!! $results2->render() !!}</div>
 
 @endif
 
