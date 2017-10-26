@@ -606,15 +606,10 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-//      $search = $request->get('search');
-     $search = Input::get('search', null);
+      $search = $request->get('search');
+     //$search = Input::get('search', null);
 
-      if(is_null($search)) {
-          $results_empty= true;
 
-      }
-
-      else {
             $results2 = Post::where('title', 'like', "%$search%")
                 ->orWhere('body', 'like', "%$search%")
                 ->orWhere('subhead', 'like', "%$search%")
@@ -624,7 +619,7 @@ class PostsController extends Controller
          // $results_empty= false;
 
           $results_empty = $results2->isEmpty();
-      }
+
 
 
 
