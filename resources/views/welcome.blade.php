@@ -6,6 +6,7 @@
 
     @if(Session::has('message'))
         <div class="alert alert-info">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
             {{Session::get('message')}}
         </div>
     @endif
