@@ -607,11 +607,28 @@ class PostsController extends Controller
     {
 
 
-        $this->validate($request,[
-            'search'=>'required',
-            Session::flash('flash_message', 'Try again!')
+        $validator = Validator::make($request->all(), [
+            'search' => 'required'
 
         ]);
+
+
+
+        if ($validator->fails()) {
+            return redirect('/')
+                ->withErrors($validator)
+                ->withInput();
+        }
+//        $this->validate($request,[
+//            'search'=>'required',
+//
+//
+//        ]
+//
+//        );
+
+
+
 
 
       $search = $request->get('search');
