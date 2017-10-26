@@ -6,17 +6,18 @@
 @section('content')
 
 
-<h1>Showing Results for '{{$search}}'.....</h1>
+
 
 @if($results_empty)
         <div class="alert alert-info">
             <span class="glyphicon glyphicon-exclamation-sign"></span>
-            No Results for your Query Try A Different Search!!!!!!!
+            No Results for '{{$search}}' Query Try A Different Search!!!!!!!
         </div>
 
 
 
 @else
+    <h1>Showing Results for '{{$search}}'.....</h1>
     @foreach($results2 as $result)
 
         <article>
