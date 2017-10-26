@@ -5,7 +5,7 @@
 <div class="col-md-8">
 
     @if(Session::has('message'))
-        <div class="alert alert-info" style="color:red;">
+        <div class="alert alert-info">
             {{Session::get('message')}}
         </div>
     @endif
