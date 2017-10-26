@@ -608,8 +608,7 @@ class PostsController extends Controller
 
 
         $validator = Validator::make($request->all(), [
-            'search' => 'required',
-            Rule::notIn(['. ', '.']),
+            'search' => 'required'
 
         ]);
 
