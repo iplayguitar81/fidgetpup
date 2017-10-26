@@ -9,7 +9,8 @@
 <h1>Showing Results for '{{$search}}'.....</h1>
 
 @if($results_empty)
-        <div class="alert alert-danger text-center">
+        <div class="alert alert-info">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
             No Results for your Query Try A Different Search!!!!!!!
         </div>
 
