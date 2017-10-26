@@ -618,7 +618,7 @@ class PostsController extends Controller
 
 
         if ($validator->fails()) {
-            return redirect('/')
+            return redirect('/search')
                 ->with('message', 'Try again by searching with valid input!');
         }
 //        $this->validate($request,[
