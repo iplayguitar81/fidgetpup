@@ -608,7 +608,9 @@ class PostsController extends Controller
 
 
         $this->validate($request,[
-            'search'=>'required'
+            'search'=>'required',
+            Session::flash('flash_message', 'Try again!')
+
         ]);
 
 
