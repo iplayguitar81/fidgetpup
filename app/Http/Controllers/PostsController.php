@@ -608,8 +608,10 @@ class PostsController extends Controller
 
 
         $validator = Validator::make($request->all(), [
-            'search' => 'required',
-            'regex:/^[\w]/',
+            'search' => ['required',
+                         'regex:/^[\w]/'
+                        ]
+
 
         ]);
 
