@@ -606,6 +606,12 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
+
+        $this->validate($request,[
+            'search'=>'required'
+        ]);
+
+
       $search = $request->get('search');
      //$search = Input::get('search', null);
 
