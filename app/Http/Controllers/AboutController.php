@@ -45,8 +45,8 @@ class AboutController extends Controller
                 'user_message' => $request->get('message')
             ), function($message)
             {
-                $message->from('info@bowtiesoft.com');
-                $message->to('snyder.chris.m@gmail.com', 'Bowtie Software & Web Development')->subject('bowtiesoft.com Contact Email!');
+                $message->from('info@fidgetspinnerdog.com');
+                $message->to('snyder.chris.m@gmail.com', 'FidgetSpinnerDog.com')->subject('fidgetspinnerdog.com Contact Email!');
             });
 
 
