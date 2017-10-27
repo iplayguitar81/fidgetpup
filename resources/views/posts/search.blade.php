@@ -30,7 +30,7 @@
                 @else
                     <img src="../images/md-img-{{ $result->imgPath}}" class="img-responsive">
                 @endif
-
+                <br/>
                 <span>{{$result->mainImg_caption}}</span>
             </div>
             <div class="col-sm-8">
