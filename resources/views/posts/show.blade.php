@@ -6,14 +6,7 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show" style="">{{ $post->title }}
-            <a href="{{ '../../'.route_articles($post->category)}}">
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-folder-open"></span>
-                    {{$post->category}}
-                </button>
-            </a>
-        </h1>
+        <h1 class="article-title-show" style="">{{ $post->title }}</h1>
         <p class="subheader-main Bebas">{{ucwords($post->subHead)}}</p>
 
         <p class="uk-article-meta" style="text-align:center;">
@@ -21,6 +14,12 @@
             {{written_by($post->user_id)}}
             on {{ gameDate($post->created_at) }}
         </p>
+        <a href="{{ '../../'.route_articles($post->category)}}">
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-folder-open"></span>
+                {{$post->category}}
+            </button>
+        </a>
         <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftrailblazersfans.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="{{url('images/Facebook.png')}}"></a></li>
             <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Ftrailblazersfans.com&text=:%20https%3A%2F%2Ftrailblazersfans.com&via=tblazersfans" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="{{url('images/Twitter.png')}}"></a></li>
