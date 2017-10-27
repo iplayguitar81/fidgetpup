@@ -17,6 +17,8 @@
 @else
     <h1 class="article-title-show">Search Results</h1>
     <p>Showing Results for '{{$search}}'.....</p>
+
+    <div class="container">
     @foreach($results2 as $result)
 
         <div class="row justify-content-md-center">
@@ -50,6 +52,7 @@
 
 
     @endforeach
+    </div>
 
     <div class="pagination">{!! $results2->render() !!}</div>
 
