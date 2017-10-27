@@ -22,17 +22,7 @@
     @foreach($results2 as $result)
 
         <div class="row justify-content-md-center">
-            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
-                @if( $result->videoPath !=null)
-                    <div class="video-container">
-                        {!! $result->videoPath !!}
-                    </div>
-                @else
-                    <img src="../images/md-img-{{ $result->imgPath}}" class="img-responsive">
-                @endif
-                <br/>
-                <span>{{$result->mainImg_caption}}</span>
-            </div>
+
             <div class="col-sm-8">
 
 
@@ -45,7 +35,19 @@
 
 
             </div>
-            <br/>
+
+            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
+                @if( $result->videoPath !=null)
+                    <div class="video-container">
+                        {!! $result->videoPath !!}
+                    </div>
+                @else
+                    <img src="../images/md-img-{{ $result->imgPath}}" class="img-responsive">
+                @endif
+
+                <span>{{$result->mainImg_caption}}</span>
+            </div>
+
             <hr/>
     </div>
         <br/>
