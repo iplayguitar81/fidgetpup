@@ -15,18 +15,20 @@
             on {{ gameDate($post->created_at) }}
         </p>
 
+        <p class="text-center"> <a href="{{ '../../'.route_articles($post->category)}}">
+        <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            {{$post->category}}
+        </button>
+        </a></p>
+
         <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftrailblazersfans.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="{{url('images/Facebook.png')}}"></a></li>
             <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Ftrailblazersfans.com&text=:%20https%3A%2F%2Ftrailblazersfans.com&via=tblazersfans" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="{{url('images/Twitter.png')}}"></a></li>
             <li><a href="https://plus.google.com/share?url=https%3A%2F%2Ftrailblazersfans.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Google+" src="{{url('images/Google+.png')}}"></a></li>
             <li><a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Ftrailblazersfans.com&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img alt="Post to Tumblr" src="{{url('images/Tumblr.png')}}"></a></li>
             <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Ftrailblazersfans.com&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Submit to Reddit" src="{{url('images/Reddit.png')}}"></a></li>
-            <a href="{{ '../../'.route_articles($post->category)}}">
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-folder-open"></span>
-                    {{$post->category}}
-                </button>
-            </a>
+
         </ul>
         <br/>
 
