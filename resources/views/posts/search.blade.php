@@ -21,15 +21,16 @@
         <article>
             <div class="col-sm-12 text-center">
         <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ucwords($result->title)}}</a></h3>
-        <img class="img-responsive center-block" src="../images/md-img-{{ $result->imgPath}}">
                 <p>Written&nbsp;
-            @if($result->user_id != null)
-                by
-                {{written_by($result->user_id)}}
-            @endif
+                    @if($result->user_id != null)
+                        by
+                        {{written_by($result->user_id)}}
+                    @endif
 
-            <span class="">{{(gameDate($result->created_at))}}</span>
-        </p>
+                    <span class="">{{(gameDate($result->created_at))}}</span>
+                </p>
+                <img class="img-responsive center-block" src="../images/md-img-{{ $result->imgPath}}">
+
 
         <p>{{snippet($result->body)}}...     <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a></p>
             </div>
