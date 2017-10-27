@@ -19,7 +19,7 @@
     <p>Showing Results for '{{$search}}'.....</p>
     @foreach($results2 as $result)
 
-        <article>
+        <row class="justify-content-md-center">
             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
                 @if( $result->videoPath !=null)
                     <div class="video-container">
@@ -45,7 +45,7 @@
             </div>
             <br/>
             <hr/>
-    </article>
+    </row>
         <br/>
 
 
