@@ -22,7 +22,7 @@
     @foreach($results2 as $result)
 
             <div class="row justify-content-md-center">
-                <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($result->title)]) }}"></a>
+                <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
                     @if( $result->videoPath !=null)
                         <div class="video-container">
                             {!! $result->videoPath !!}
