@@ -43,11 +43,10 @@
 
             </div>
             <br/>
-
             <hr/>
     </article>
         <br/>
-        <hr>
+
 
     @endforeach
 
