@@ -36,7 +36,7 @@
                 <div class="col-sm-7 text-center">
 
                     {{$result->category}}
-                    <a href="#" class="btn btn-info btn-lg">
+                    <a href="#" class="">
                         <span class="glyphicon glyphicon-folder-open"></span>
                     </a>
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a>
