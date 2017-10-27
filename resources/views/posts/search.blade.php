@@ -46,7 +46,7 @@
                 <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
 
 
-                <p>{{snippet($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
+                <p>{{snippety($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
 
 
             </div>
