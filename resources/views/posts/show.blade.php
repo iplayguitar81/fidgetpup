@@ -6,7 +6,14 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show" style="">{{ $post->title }}</h1>
+        <h1 class="article-title-show" style="">{{ $post->title }}
+            <a href="{{ route_articles($result->category)}}">
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                    {{$result->category}}
+                </button>
+            </a>
+        </h1>
         <p class="subheader-main Bebas">{{ucwords($post->subHead)}}</p>
 
         <p class="uk-article-meta" style="text-align:center;">
