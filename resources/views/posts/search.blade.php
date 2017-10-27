@@ -23,10 +23,7 @@
 
             <div class="row justify-content-md-center">
                 <div class="col-sm-5 text-center">
-                    {{$result->category}}
-                    <a href="#" class="">
-                        <span class="glyphicon glyphicon-folder-open"></span>
-                    </a>
+
                     @if( $result->videoPath !=null)
                         <div class="video-container">
                             {!! $result->videoPath !!}
@@ -40,7 +37,11 @@
                 <div class="col-sm-7 text-center">
 
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a>
-
+                        <span class="text-right">{{$result->category}}
+                        <a href="#" class="">
+                            <span class="glyphicon glyphicon-folder-open"></span>
+                        </a>
+                            </span>
                     </h2>
                     <p class="text-muted">{{$result->subHead}}</p>
                     <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
