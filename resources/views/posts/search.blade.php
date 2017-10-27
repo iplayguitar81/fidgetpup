@@ -23,9 +23,14 @@
 
         <div class="row">
             <div class="col-sm-9">
+                <div class="search-credits">
                 <h2 class="secondary-posts-title text-center"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
                 <span class="text-muted text-center">{{$result->subHead}}</span>
-                <div class="row">
+                    <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
+
+
+                </div>
+                    <div class="row">
 
                 <div class="col-8 col-sm-6">
                 @if( $result->videoPath !=null)
@@ -43,7 +48,6 @@
 
 
 
-                <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
 
 
                 <p>{{snippety($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
