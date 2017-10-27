@@ -15,7 +15,8 @@
 
 
 @else
-    <h1>Showing Results for '{{$search}}'.....</h1>
+    <h1 class="article-title-show">Search Results</h1>
+    <p>Showing Results for '{{$search}}'.....</p>
     @foreach($results2 as $result)
 
         <article>
