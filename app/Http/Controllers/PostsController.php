@@ -606,7 +606,7 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
-
+        //this is where the magic happens to prevent cruddy input into site search form...
         $validator = Validator::make($request->all(), [
             'search' => ['required',
                          'regex:/^[\w]/'
@@ -616,10 +616,10 @@ class PostsController extends Controller
         ]);
 
 
-
+        //redirect with customizable error message below...
         if ($validator->fails()) {
             return redirect('/')
-                ->with('message', 'Try again by searching with valid input!');
+                ->with('message', 'Try your search again with valid input!');
         }
 //        $this->validate($request,[
 //            'search'=>'required',
@@ -628,8 +628,6 @@ class PostsController extends Controller
 //        ]
 //
 //        );
-
-
 
 
 
