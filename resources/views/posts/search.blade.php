@@ -21,42 +21,35 @@
     <div class="container">
     @foreach($results2 as $result)
 
-        <div class="row">
-            <div class="col-sm-9">
-                <div class="search-credits">
-                <h2 class="secondary-posts-title text-center"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
-                <span class="text-muted text-center">{{$result->subHead}}</span>
-                    <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
+            <div class="row justify-content-md-center">
+                <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($result->title)]) }}"></a>
+                    @if( $result->videoPath !=null)
+                        <div class="video-container">
+                            {!! $result->videoPath !!}
+                        </div>
+                    @else
+                        <img src="../images/md-img-{{ $result->imgPath}}" class="img-responsive">
+                    @endif
+                    <br/>
+                    <span>{{$result->mainImg_caption}}</span>
+                </div>
+                <div class="col-sm-8">
+
+
+                    <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
+                    <p class="text-muted">{{$result->subHead}}</p>
+                    <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
+
+
+                    <p>{{snippet($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
 
 
                 </div>
-                    <div class="row">
-
-                <div class="col-8 col-sm-6">
-                @if( $result->videoPath !=null)
-                    <div class="video-container">
-                        {!! $result->videoPath !!}
-                    </div>
-                @else
-                    <img src="../images/md-img-{{ $result->imgPath}}" class="img-responsive">
-                @endif
                 <br/>
-                <span>{{$result->mainImg_caption}}</span>
-            </div>
-            <div class="col-4 col-sm-6">
 
-
-
-
-
-
-                <p>{{snippety($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
-
+                <hr/>
 
             </div>
-                </div>
-            </div>
-        </div>
             <br/>
             <hr/>
 
