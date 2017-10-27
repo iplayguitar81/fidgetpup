@@ -38,10 +38,10 @@
 
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a>
                         |
-                        <a href="#" class="">
+                        <button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-folder-open"></span>
-                        </a>
-                        <span class="category-search text-right">{{$result->category}}</span>
+                            {{$result->category}}
+                        </button>
                     </h2>
                     <p class="text-muted">{{$result->subHead}}</p>
                     <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
