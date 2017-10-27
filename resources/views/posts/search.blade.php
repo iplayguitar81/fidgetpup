@@ -23,8 +23,8 @@
 
         <div class="row">
             <div class="col-sm-9">
-                <h2 class="secondary-posts-title text-center"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a><br/><span class="text-muted text-center">{{$result->subHead}}</span></h2>
-
+                <h2 class="secondary-posts-title text-center"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
+                <br/><span class="text-muted text-center">{{$result->subHead}}</span>
                 <div class="row">
 
                 <div class="col-8 col-sm-6">
