@@ -38,7 +38,7 @@
 
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
                     <p class="text-muted">{{$result->subHead}}</p>
-                    <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
+                    <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
 
 
                     <p>{{snippet($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
