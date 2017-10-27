@@ -10,7 +10,7 @@
             <a href="{{ route_articles($post->category)}}">
                 <button type="button" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-folder-open"></span>
-                    {{$result->category}}
+                    {{$post->category}}
                 </button>
             </a>
         </h1>
