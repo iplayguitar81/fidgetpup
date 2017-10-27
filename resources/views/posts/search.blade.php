@@ -16,7 +16,7 @@
 
 @else
     <h1 class="article-title-show">Search Results</h1>
-    <h3 class="text-center">Showing Results for '{{$search}}'.....</h3>
+    <h3 class="text-center">Showing Results For '{{ucwords($search)}}'.....</h3>
     <br/>
     <hr/>
 
