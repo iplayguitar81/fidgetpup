@@ -52,4 +52,19 @@ function snippety($body){
 }
 
 
+function route_articles($category) {
+
+    if($category=='news'){
+
+        $output = "url('news/general')";
+    }
+    else{
+        $output = "url('news/'.$category->category)";
+    }
+
+   return $output;
+
+}
+
+
 ?>
