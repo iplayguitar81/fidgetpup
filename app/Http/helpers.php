@@ -59,7 +59,7 @@ function route_articles($category) {
         $output = "url('news/general')";
     }
     else{
-        $output = "url('news/'.$category->category)";
+        $output = "url('news/'.$category)";
     }
 
    return $output;
