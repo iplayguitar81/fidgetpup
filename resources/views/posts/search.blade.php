@@ -47,13 +47,10 @@
                 </div>
                 <br/>
 
-                <hr/>
-
             </div>
             <br/>
             <hr/>
 
-        <br/>
 
 
     @endforeach
