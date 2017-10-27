@@ -1362,6 +1362,10 @@ td.score-link{
 
 }
 
+.category-search {
+    font-size: .4em;
+}
+
 
 ._2p3a {
     width: 100% !important;
