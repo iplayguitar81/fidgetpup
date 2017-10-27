@@ -22,7 +22,7 @@
     @foreach($results2 as $result)
 
             <div class="row justify-content-md-center">
-                <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
+                <div class="col-sm-5 text-center"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
                     @if( $result->videoPath !=null)
                         <div class="video-container">
                             {!! $result->videoPath !!}
@@ -33,7 +33,7 @@
                     <br/>
                     <span>{{$result->mainImg_caption}}</span>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-7 text-center">
 
 
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
