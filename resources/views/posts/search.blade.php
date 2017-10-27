@@ -35,12 +35,12 @@
                 </div>
                 <div class="col-sm-7 text-center">
 
-
+                    {{$result->category}}
+                    <a href="#" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                    </a>
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a>
-                        <p>{{$result->category}}
-                            <a href="#" class="btn btn-info btn-lg">
-                                <span class="glyphicon glyphicon-folder-open"></span>
-                            </a>
+
                     </h2>
                     <p class="text-muted">{{$result->subHead}}</p>
                     <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
