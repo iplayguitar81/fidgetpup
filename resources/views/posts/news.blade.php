@@ -42,7 +42,7 @@
                                 <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
 
 
-                                <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><button class="btn-xs">READ MORE</button></a></p>
+                                <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><button class="btn btn-success btn-xs">READ MORE</button></a></p>
 
 
                             </div>
