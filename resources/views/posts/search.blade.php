@@ -21,7 +21,7 @@
         <article>
             <div class="col-sm-12 text-center">
         <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ucwords($result->title)}}</a></h3>
-        <img class="img-responsive center-block" src="../images/thmb-{{ $result->imgPath}}">
+        <img class="img-responsive center-block" src="../images/md-img-{{ $result->imgPath}}">
                 <p>Written&nbsp;
             @if($result->user_id != null)
                 by
