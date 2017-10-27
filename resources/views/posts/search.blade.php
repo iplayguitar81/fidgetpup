@@ -12,8 +12,6 @@
             No Results for '{{$search}}' Query Try A Different Search!!!!!!!
         </div>
 
-
-
 @else
     <h1 class="article-title-show">Search Results</h1>
     <h3 class="text-center">Showing Results For '{{ucwords($search)}}'.....</h3>
@@ -24,7 +22,7 @@
     @foreach($results2 as $result)
 
             <div class="row justify-content-md-center">
-                <div class="col-sm-5 text-center"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
+                <div class="col-sm-5 text-center">
                     @if( $result->videoPath !=null)
                         <div class="video-container">
                             {!! $result->videoPath !!}
@@ -38,7 +36,12 @@
                 <div class="col-sm-7 text-center">
 
 
-                    <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
+                    <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a>
+                        <p>{{$result->category}}
+                            <a href="#" class="btn btn-info btn-lg">
+                                <span class="glyphicon glyphicon-folder-open"></span>
+                            </a>
+                    </h2>
                     <p class="text-muted">{{$result->subHead}}</p>
                     <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
 
