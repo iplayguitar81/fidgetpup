@@ -1343,6 +1343,7 @@ td.score-link{
 
     font-family:segoe;
     font-size: 3em;
+    margin-top: 0;
 }
 
 .secondary-posts-title a{
