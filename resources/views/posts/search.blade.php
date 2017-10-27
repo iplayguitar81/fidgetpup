@@ -19,22 +19,32 @@
     @foreach($results2 as $result)
 
         <article>
-            <div class="col-sm-12 text-center">
-        <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ucwords($result->title)}}</a></h3>
-                <p>Written&nbsp;
-                    @if($result->user_id != null)
-                        by
-                        {{written_by($result->user_id)}}
-                    @endif
-
-                    <span class="">{{(gameDate($result->created_at))}}</span>
-                </p>
-                <img class="img-responsive center-block" src="../images/md-img-{{ $result->imgPath}}">
-
-
-        <p>{{snippet($result->body)}}...     <a class="btn btn-success btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a></p>
+            <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}"></a>
+                @if( $result->videoPath !=null)
+                    <div class="video-container">
+                        {!! $result->videoPath !!}
+                    </div>
+                @else
+                    <img src="../images/md-img-{{ $result->imgPath}}" class="img-responsive">
+                @endif
+                <br/>
+                <span>{{$result->mainImg_caption}}</span>
             </div>
+            <div class="col-sm-8">
 
+
+                <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a></h2>
+                <p class="text-muted">{{$result->subHead}}</p>
+                <p class="text-muted">Written by <a href="#">{{written_by($result->user_id)}}</a> on {{gameDate($result->created_at)}} </p>
+
+
+                <p>{{snippet($result->body)}}...<a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">READ MORE</a></p>
+
+
+            </div>
+            <br/>
+
+            <hr/>
     </article>
         <br/>
         <hr>
