@@ -37,7 +37,7 @@
                 <div class="col-sm-7 text-center">
 
                     <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{ ucwords($result->title)}}</a>
-                       <a href="{{url('news/'.$result->category)}}">
+                       <a href="{{ route_articles($result->category)}}">
                         <button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-folder-open"></span>
                             {{$result->category}}
