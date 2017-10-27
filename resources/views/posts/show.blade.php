@@ -7,7 +7,7 @@
 
     <article class="center-block">
         <h1 class="article-title-show" style="">{{ $post->title }}
-            <a href="{{ route_articles($post->category)}}">
+            <a href="{{ '../'.route_articles($post->category)}}">
                 <button type="button" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-folder-open"></span>
                     {{$post->category}}
