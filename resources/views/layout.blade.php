@@ -160,8 +160,8 @@ p.second-art-snip{
 
 
 .article-texterson2 {
-    font-family: 'Trebuchet MS', Arial, Tahoma;
-    font-size: 1.6em;
+    font-family: 'Trebuchet MS', Arial, Tahoma !important;
+    font-size: 1.4em;
 }
 
 /*!
