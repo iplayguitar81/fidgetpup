@@ -15,18 +15,13 @@
                 <li><a data-toggle="tab" href="#menu1">league news</a></li>
             </ul>
 
-
-
-                @foreach($news as $item)
-
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
-                    <h3><span class="">
+                    <h3><a href="{{ route_articles($result->category)}}">team news
+                            <span class="glyphicon glyphicon-folder-open"></span></a>
+                    </h3>
 
-                        <a href="{{ route_articles($item->category)}}" class="btn btn-success btn-lg">
-                            <span class="glyphicon glyphicon-folder-open"></span> {{$item->category}}
-                        </a>
-                    </span></h3>
+                @foreach($news as $item)
 
 
                         <div class="row">
