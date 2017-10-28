@@ -23,7 +23,7 @@
                 <div id="home" class="tab-pane fade in active">
                     <h3><span class="">
 
-                        <a href="{{ route_articles($item->category)}}" class="btn btn-info btn-lg">
+                        <a href="{{ route_articles($item->category)}}" class="btn btn-success btn-lg">
                             <span class="glyphicon glyphicon-folder-open"></span> {{$item->category}}
                         </a>
                     </span></h3>
