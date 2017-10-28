@@ -22,7 +22,7 @@
 
                     <br/>
                     <a href="/news/general" class="btn btn-success btn-lg">
-                        <span class="glyphicon glyphicon-folder-open"></span> General News
+                        <span class="glyphicon glyphicon-folder-open"></span> &nbsp;General News
                     </a>
 
                 @foreach($news as $item)
