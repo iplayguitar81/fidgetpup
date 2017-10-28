@@ -15,15 +15,18 @@
                 <li><a data-toggle="tab" href="#menu1">league news</a></li>
             </ul>
 
-            <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <h3>team news</h3><p>Folder-open icon on a styled link button:
-                        <a href="#" class="btn btn-info btn-lg">
-                            <span class="glyphicon glyphicon-folder-open"></span> Folder
-                        </a>
-                    </p>
+
 
                 @foreach($news as $item)
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3><span class="">
+
+                        <a href="{{ route_articles($item->category)}}" class="btn btn-info btn-lg">
+                            <span class="glyphicon glyphicon-folder-open"></span> {{$item->category}}
+                        </a>
+                    </span></h3>
 
 
                         <div class="row">
