@@ -43,7 +43,7 @@
                             <div class="col-sm-8">
 
 
-                                <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ ucwords($item->title)}}</a> <a class="small-folder" href="{{ route_articles($item->category)}}"><span class="glyphicon glyphicon-folder-open"></span>{{$item->category}}</a></h2>
+                                <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ ucwords($item->title)}}</a> <a class="small-folder" href="{{ route_articles($item->category)}}"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;{{$item->category}}</a></h2>
                                 <p class="text-muted">{{$item->subHead}}</p>
                                 <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
 
