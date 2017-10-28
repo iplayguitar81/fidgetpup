@@ -154,7 +154,7 @@ ul.share-buttons .sr-only {
 
 .small-folder{
 
-    font-size: 1em;
+    font-size: .3em;
 }
 
 
