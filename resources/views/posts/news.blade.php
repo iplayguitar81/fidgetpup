@@ -18,12 +18,12 @@
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
 
-                    {{--<h3>team news </h3>--}}
+                    <h3>team news </h3>
 
                     <br/>
-                    <a href="/news/general" class="btn btn-success btn-lg">
-                        <span class="glyphicon glyphicon-folder-open"></span> &nbsp;General News
-                    </a>
+                    {{--<a href="/news/general" class="btn btn-success btn-lg">--}}
+                        {{--<span class="glyphicon glyphicon-folder-open"></span> &nbsp;General News--}}
+                    {{--</a>--}}
 
                 @foreach($news as $item)
 
