@@ -58,6 +58,10 @@ function route_articles($category) {
 
         $output = "news/general";
     }
+    elseif($category=='former_players'){
+        $output = "news/former-players";
+    }
+
     else{
         $output = "news/".$category;
     }
