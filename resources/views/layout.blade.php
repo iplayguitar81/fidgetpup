@@ -151,6 +151,13 @@ ul.share-buttons .sr-only {
 
 }
 
+
+.small-folder{
+
+    font-size: 1em;
+}
+
+
 p.second-art-snip{
     font-size: 1em;
 }
