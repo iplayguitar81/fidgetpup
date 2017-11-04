@@ -343,6 +343,7 @@ class PostsController extends Controller
         if($filename > 0){
         $page->imgPath = $filename;
         $page->save();
+
         }
 
         Session::flash('flash_message', 'Post updated!');
