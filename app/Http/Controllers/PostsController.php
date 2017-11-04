@@ -381,6 +381,10 @@ class PostsController extends Controller
     public function destroy($id)
     {
         Post::destroy($id);
+      #  App\ImageGallery::destroy($id);
+
+        DB::table('image_galleries')->where('post_id', '=', $id)->delete();
+
 
         Session::flash('flash_message', 'Post deleted!');
 
