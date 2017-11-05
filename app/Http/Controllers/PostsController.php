@@ -539,10 +539,10 @@ class PostsController extends Controller
         return view('posts.news', compact('buddy_video','buddy_news', 'pet_tricks', 'comedy'));
     }
 
-    public function general()
+    public function buddy_video()
     {
 
-        $category="news";
+        $category="buddy-video";
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         $news =collect($news);
 
