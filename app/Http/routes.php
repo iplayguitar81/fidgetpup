@@ -145,15 +145,6 @@ Route::post('contact',
     ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
 
-Route::get('/boxscores/season_2015_2016',
-    ['as' => 'boxscores.season2015_2016', 'uses' => 'boxscoreController@season_2015_2016']);
-
-Route::get('/boxscores/season_2014_2015',
-    ['as' => 'boxscores.season2014_2015', 'uses' => 'boxscoreController@season_2014_2015']);
-
-Route::get('/boxscores/season_2013_2014',
-    ['as' => 'boxscores.season2013_2014', 'uses' => 'boxscoreController@season_2013_2014']);
-
 
 
 Route::get('/posts/user_posts','PostsController@user_posts');
@@ -217,7 +208,7 @@ Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsControll
 
 Route::get('/news/', ['as' => 'posts.news', 'uses'=>'PostsController@news']);
 
-Route::get('/news/general', ['as' => 'posts.general', 'uses'=>'PostsController@general']);
+Route::get('/news/buddy-video', ['as' => 'posts.buddy-video-news', 'uses'=>'PostsController@buddy_video']);
 
 Route::get('/news/retro', ['as' => 'posts.retro', 'uses'=>'PostsController@retro']);
 
