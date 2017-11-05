@@ -18,14 +18,14 @@
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
 
-                    <h3>team news </h3>
+                    <h3>buddy videos </h3>
 
                     <br/>
                     {{--<a href="/news/general" class="btn btn-success btn-lg">--}}
                         {{--<span class="glyphicon glyphicon-folder-open"></span> &nbsp;General News--}}
                     {{--</a>--}}
 
-                @foreach($news as $item)
+                @foreach($buddy_video as $item)
 
 
                         <div class="row">
@@ -67,9 +67,9 @@
 
                 </div>
                 <div id="menu1" class="tab-pane fade">
-                    <h3>league news</h3>
+                    <h3>buddy news</h3>
 
-                    @foreach($nbanews as $item)
+                    @foreach($buddy_news as $item)
 
                         <div class="row">
                             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></a>
@@ -128,9 +128,9 @@
 
             <div class="tab-content">
                 <div id="past" class="tab-pane fade in active">
-                    <h3>past blazers</h3>
+                    <h3>pet tricks</h3>
 
-                    @foreach($former_players as $item)
+                    @foreach($pet_tricks as $item)
 
                         <div class="row">
                             <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"></a>
@@ -174,10 +174,10 @@
 
                 </div>
                 <div id="retro" class="tab-pane fade">
-                    <h3>retro news</h3>
+                    <h3>comedy</h3>
 
 
-                    @foreach($retronews as $item)
+                    @foreach($comedy as $item)
 
 
                         <div class="row">
