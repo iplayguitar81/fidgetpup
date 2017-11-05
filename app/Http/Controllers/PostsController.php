@@ -546,8 +546,21 @@ class PostsController extends Controller
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         $news =collect($news);
 
+        return view('posts.buddy-video-news', compact('news'));
+    }
+
+
+    public function buddy_news()
+    {
+
+        $category="buddy-news";
+        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
+        $news =collect($news);
+
         return view('posts.general', compact('news'));
     }
+
+
 
 
     public function retro()
