@@ -3,7 +3,9 @@
 @section('content')
 <div class="container">
 
-    @can('isAdmin')<h1 class="Ripper" >create new post</h1>
+    @can('isAdmin')
+
+        <h1 class="article-title-show">Edit Post</h1>
 
     @if ($errors->any())
         <ul class="uk-alert-danger">
