@@ -84,10 +84,10 @@
     {!! Form::label('category', trans('posts.category'), ['class' => '']) !!}
 
     {{ Form::select('category', [
-   'news' => 'General News',
-   'nba' => 'NBA League News',
-   'former_players' => 'Former Players News',
-   'retro' => 'Retro News'
+               'buddy-video' => 'Buddy Video',
+               'buddy-news' => 'Buddy News',
+               'pet-tricks' => 'Pet Tricks',
+               'comedy' => 'Comedy'
 
    ]
 ) }}
