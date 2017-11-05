@@ -519,24 +519,24 @@ class PostsController extends Controller
     public function news()
     {
 
-        $category="news";
+        $category="buddy-video";
 
-        $news = Post::where('category', '=', $category)->take(3)->orderBy('created_at', 'desc')->get();
-
-
-        $category1="retro";
-
-        $retronews = Post::where('category', '=', $category1)->take(3)->orderBy('created_at', 'desc')->get();
-
-        $category2="nba";
-
-        $nbanews = Post::where('category', '=', $category2)->take(3)->orderBy('created_at', 'desc')->get();
+        $buddy_video = Post::where('category', '=', $category)->take(3)->orderBy('created_at', 'desc')->get();
 
 
-        $category3="former_players";
+        $category1="buddy-news";
 
-        $former_players = Post::where('category', '=', $category3)->take(3)->orderBy('created_at', 'desc')->get();
-        return view('posts.news', compact('news','retronews', 'nbanews', 'former_players'));
+        $buddy_news = Post::where('category', '=', $category1)->take(3)->orderBy('created_at', 'desc')->get();
+
+        $category2="pet-tricks";
+
+        $pet_tricks = Post::where('category', '=', $category2)->take(3)->orderBy('created_at', 'desc')->get();
+
+
+        $category3="comedy";
+
+        $comedy = Post::where('category', '=', $category3)->take(3)->orderBy('created_at', 'desc')->get();
+        return view('posts.news', compact('buddy_video','buddy_news', 'pet_tricks', 'comedy'));
     }
 
     public function general()
