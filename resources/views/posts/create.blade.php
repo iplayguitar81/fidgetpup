@@ -132,7 +132,7 @@
 
     <div class="form-group">
         <div class="">
-            {!! Form::submit('Create', ['class' => 'btn btn-danger form-control']) !!}
+            {!! Form::submit('Create', ['class' => 'btn btn-success form-control']) !!}
         </div>
     </div>
     {!! Form::close() !!}
