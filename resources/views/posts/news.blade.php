@@ -63,7 +63,7 @@
 
                     <br/>
 
-                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/buddy-video')}}';" >All Team News...</button>
+                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/buddy-video')}}';" >All Buddy Videos...</button>
 
                 </div>
                 <div id="menu1" class="tab-pane fade">
@@ -110,7 +110,7 @@
 
                     <br/>
 
-                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/nba')}}';" >All League News...</button>
+                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/buddy-news')}}';" >All Buddy News...</button>
 
 
                 </div>
