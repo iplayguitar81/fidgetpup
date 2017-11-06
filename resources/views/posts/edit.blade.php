@@ -79,7 +79,7 @@
                 {!! Form::label('category', trans('posts.category'), ['class' => '']) !!}
 
                 {{ Form::select('category', [
-               'buddy-video' => 'Buddy Video',
+               'buddy-videos' => 'Buddy Videos',
                'buddy-news' => 'Buddy News',
                'pet-tricks' => 'Pet Tricks',
                'comedy' => 'Comedy'
