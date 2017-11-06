@@ -325,3 +325,7 @@ Route::post('posts/search', ['as' => 'posts.search', 'uses'=>'PostsController@ge
 
 Route::get('search', 'PostsController@getIndex');
 Route::resource('post-images', 'PostImagesController');
+
+Route::get('admin', function(){
+    echo 'You have access';
+});
