@@ -539,7 +539,7 @@ class PostsController extends Controller
         return view('posts.news', compact('buddy_video','buddy_news', 'pet_tricks', 'comedy'));
     }
 
-    public function buddy_video()
+    public function buddy_videos()
     {
 
         $category="buddy-video";
