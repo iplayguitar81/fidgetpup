@@ -169,7 +169,7 @@
 
                     <br/>
 
-                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/former-players')}}';" >All Alum News...</button>
+                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/pet-tricks')}}';" >All Pet Tricks News...</button>
 
 
                 </div>
