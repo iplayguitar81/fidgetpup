@@ -557,7 +557,7 @@ class PostsController extends Controller
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         $news =collect($news);
 
-        return view('posts.general', compact('news'));
+        return view('posts.buddy-news', compact('news'));
     }
 
 
