@@ -573,32 +573,14 @@ class PostsController extends Controller
     }
 
 
-    public function retro()
-    {
-        $category="retro";
-
-        $news = Post::where('category', '=', $category)->get();
-
-
-        return view('posts.retro', compact('news'));
-    }
-
-
-    public function nba()
+    public function pet_tricks()
     {
 
-        $category="nba";
+        $category="pet-tricks";
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
-        //$news ='nba news feed...';
-        return view('posts.nba', compact('news'));
-    }
+        $news =collect($news);
 
-
-    public function former_players()
-    {
-        $category="former_players";
-        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
-        return view('posts.former-players', compact('news'));
+        return view('posts.pet-tricks-news', compact('news'));
     }
 
 
