@@ -214,7 +214,7 @@
 
 
                     <br/>
-                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/retro')}}';" >All Retro News...</button>
+                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/comedy')}}';" >All Comedy News...</button>
 
                 </div>
 
