@@ -519,7 +519,7 @@ class PostsController extends Controller
     public function news()
     {
 
-        $category="buddy-video";
+        $category="buddy-videos";
 
         $buddy_video = Post::where('category', '=', $category)->take(3)->orderBy('created_at', 'desc')->get();
 
@@ -542,7 +542,7 @@ class PostsController extends Controller
     public function buddy_videos()
     {
 
-        $category="buddy-video";
+        $category="buddy-videos";
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         $news =collect($news);
 
