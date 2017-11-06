@@ -210,7 +210,7 @@ Route::get('/news/', ['as' => 'posts.news', 'uses'=>'PostsController@news']);
 
 Route::get('/news/buddy-video', ['as' => 'posts.buddy-video-news', 'uses'=>'PostsController@buddy_video']);
 
-Route::get('/news/retro', ['as' => 'posts.retro', 'uses'=>'PostsController@retro']);
+Route::get('/news/buddy-news', ['as' => 'posts.buddy-news', 'uses'=>'PostsController@buddy_news']);
 
 Route::get('/news/nba', ['as' => 'posts.nba', 'uses'=>'PostsController@nba']);
 
