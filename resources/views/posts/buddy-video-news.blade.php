@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'General News')
+@section('title', 'Buddy Videos')
 @section('content')
 
     <h1 class="article-title-show">buddy videos</h1>
