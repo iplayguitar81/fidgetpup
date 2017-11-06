@@ -214,7 +214,7 @@ Route::get('/news/buddy-news', ['as' => 'posts.buddy-news', 'uses'=>'PostsContro
 
 Route::get('/news/comedy', ['as' => 'posts.comedy-news', 'uses'=>'PostsController@comedy_news']);
 
-Route::get('/news/former-players', ['as' => 'posts.former-players', 'uses'=>'PostsController@former_players']);
+Route::get('/news/pet-tricks', ['as' => 'posts.pet-tricks-news', 'uses'=>'PostsController@pet_tricks']);
 
 
 
