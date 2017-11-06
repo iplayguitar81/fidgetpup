@@ -63,7 +63,7 @@
 
                     <br/>
 
-                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/buddy-video')}}';" >All Buddy Videos...</button>
+                    <button type="submit" class="btn btn-success btn-md active" onclick="window.location='{{url('news/buddy-videos')}}';" >All Buddy Videos...</button>
 
                 </div>
                 <div id="menu1" class="tab-pane fade">
