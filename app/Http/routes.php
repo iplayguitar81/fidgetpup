@@ -208,7 +208,7 @@ Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsControll
 
 Route::get('/news/', ['as' => 'posts.news', 'uses'=>'PostsController@news']);
 
-Route::get('/news/buddy-video', ['as' => 'posts.buddy-video-news', 'uses'=>'PostsController@buddy_video']);
+Route::get('/news/buddy-videos', ['as' => 'posts.buddy-video-news', 'uses'=>'PostsController@buddy_videos']);
 
 Route::get('/news/buddy-news', ['as' => 'posts.buddy-news', 'uses'=>'PostsController@buddy_news']);
 
