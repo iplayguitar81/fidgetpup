@@ -562,6 +562,16 @@ class PostsController extends Controller
 
 
 
+    public function comedy_news()
+    {
+
+        $category="comedy";
+        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
+        $news =collect($news);
+
+        return view('posts.comedy-news', compact('news'));
+    }
+
 
     public function retro()
     {
