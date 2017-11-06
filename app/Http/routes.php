@@ -328,4 +328,4 @@ Route::resource('post-images', 'PostImagesController');
 
 Route::get('admin', function(){
     echo 'You have access';
-});
+})->middleware('admin');
