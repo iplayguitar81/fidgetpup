@@ -212,7 +212,7 @@ Route::get('/news/buddy-videos', ['as' => 'posts.buddy-video-news', 'uses'=>'Pos
 
 Route::get('/news/buddy-news', ['as' => 'posts.buddy-news', 'uses'=>'PostsController@buddy_news']);
 
-Route::get('/news/nba', ['as' => 'posts.nba', 'uses'=>'PostsController@nba']);
+Route::get('/news/comedy', ['as' => 'posts.comedy-news', 'uses'=>'PostsController@comedy_news']);
 
 Route::get('/news/former-players', ['as' => 'posts.former-players', 'uses'=>'PostsController@former_players']);
 
