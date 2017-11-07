@@ -33,11 +33,10 @@ use willvincent\Rateable\Rateable;
 Route::get('/', function () {
 
 
-    //$posts = Post::orderBy('created_at', 'desc')->paginate(6);
+
     $users = User::all();
     $ratings =Rating::all();
-    //$scores =boxscore::take(5)->orderBy('datey', 'desc')->limit(5);
-//    $scores = boxscore::orderBy('datey', 'desc')->take(8)->get();
+
 
     $published = Post::where('published','=', '1')->orderBy('created_at','desc')->take(3)->get();
 
@@ -218,11 +217,6 @@ Route::get('/news/pet-tricks', ['as' => 'posts.pet-tricks-news', 'uses'=>'PostsC
 
 
 
-
-
-//Route::get('posts/test_code/{id}',['as' => 'posts.test_code', 'uses'=>'PostsController@test_code']);
-
-
 Route::resource('posts', 'PostsController');
 
 Route::resource('boxscores', 'boxscoreController');
@@ -231,7 +225,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-//Route::post('posts/create/uploadFiles', 'PostsController@uploadFiles');
+
 
 
 Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpload']);
