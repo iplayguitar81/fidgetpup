@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'title',
+    'title' => 'Title',
     'subhead' => 'Sub-Heading',
 'body' => 'Body',
 'imgPath' => 'Image Path',
