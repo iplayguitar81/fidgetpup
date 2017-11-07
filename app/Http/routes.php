@@ -146,7 +146,7 @@ Route::post('contact',
 
 
 
-Route::get('/posts/user_posts','PostsController@user_posts');
+Route::get('/posts/user_posts','PostsController@user_posts')->middleware('admin');
 
 
 
