@@ -2,14 +2,16 @@
 
 return [
     'title' => 'title',
-    'subhead' => 'subhead',
+    'subhead' => 'Sub-Heading',
 'body' => 'Body',
-'imgPath' => 'imgPath',
+'imgPath' => 'Image Path',
 'category' => 'Category',
 'main_article' => 'Main Article?',
 'published' => 'Published?',
 
-'mainImg_caption' => 'Feature Image Caption',
+'mainImg_caption' => 'Main Image Caption',
+
+    'videoPath' => 'Embed YouTube Code',
 
 
 
