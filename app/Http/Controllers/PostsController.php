@@ -109,7 +109,7 @@ class PostsController extends Controller
         }
 
         return view('posts.create', compact('user'));
-        $this->authorize('isAdmin');
+        $this->middleware('admin');
     }
 
     public function post_rating(){
