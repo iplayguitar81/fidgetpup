@@ -306,7 +306,7 @@ class PostsController extends Controller
         $category = $post->category;
 
         return view('posts.edit', compact('post','checked','category'));
-        $this->authorize('isAdmin');
+        $this->middleware('admin');
     }
 
     /**
