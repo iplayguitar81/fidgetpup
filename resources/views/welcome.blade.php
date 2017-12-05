@@ -105,7 +105,7 @@
 
 <br/>
 
-<div class="col-md-4 col-pull-4">
+<div class="col-md-3 col-sm-10 col-sm-offset-1 col-md-offset-1">
     @include('sidebar')
 </div>
 
