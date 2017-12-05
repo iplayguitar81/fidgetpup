@@ -1827,16 +1827,16 @@ em.caption-em{
     .nav-tabs > li > a:hover{
         background-color: silver !important;
         border-radius: 5px;
-        color:#fff;
-        border:1px solid black;
+        color: #000000;
+        border: 1px solid black;
         border-bottom: none;
     }
     .nav-tabs > li.active > a,
     .nav-tabs > li.active > a:focus,
     .nav-tabs > li.active > a:hover{
         background-color: #85f665 !important;
-        color:#fff;
-        border:2px solid #3F515F;
+        color: #fff;
+        border: 1px solid #000000;
         border-bottom: none;
     }
 
