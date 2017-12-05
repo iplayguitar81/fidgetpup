@@ -11,8 +11,8 @@
 
 
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">buddy videos</a></li>
-                <li><a data-toggle="tab" href="#menu1">buddy news</a></li>
+                <li class="active"><a class="tab-links" data-toggle="tab" href="#home">buddy videos</a></li>
+                <li><a class="tab-links" data-toggle="tab" href="#menu1">buddy news</a></li>
             </ul>
 
             <div class="tab-content">
@@ -122,8 +122,8 @@
 
 
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#past">pet tricks</a></li>
-                <li><a data-toggle="tab" href="#retro">comedy</a></li>
+                <li class="active"><a class="tab-links" data-toggle="tab" href="#past">pet tricks</a></li>
+                <li><a class="tab-links" data-toggle="tab" href="#retro">comedy</a></li>
             </ul>
 
             <div class="tab-content">
