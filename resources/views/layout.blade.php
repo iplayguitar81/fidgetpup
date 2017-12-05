@@ -1834,7 +1834,7 @@ em.caption-em{
     .nav-tabs > li.active > a,
     .nav-tabs > li.active > a:focus,
     .nav-tabs > li.active > a:hover{
-        background-color: #68889E !important;
+        background-color: silver !important;
         color:#fff;
         border:2px solid #3F515F;
         border-bottom: none;
