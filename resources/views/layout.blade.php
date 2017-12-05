@@ -1840,6 +1840,9 @@ em.caption-em{
         border-bottom: none;
     }
 
+    .tab-links {
+        color: #000000;
+    }
 
 </style>
 
