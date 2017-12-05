@@ -1827,7 +1827,7 @@ em.caption-em{
     .nav-tabs > li > a:hover{
         background-color: silver !important;
         border-radius: 5px;
-        color: #000000;
+        color: #FFFFFF;
         border: 1px solid black;
         border-bottom: none;
     }
@@ -1835,7 +1835,7 @@ em.caption-em{
     .nav-tabs > li.active > a:focus,
     .nav-tabs > li.active > a:hover{
         background-color: #85f665 !important;
-        color: #fff;
+        color: black;
         border: 1px solid #000000;
         border-bottom: none;
     }
