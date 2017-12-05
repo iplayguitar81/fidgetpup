@@ -10,7 +10,7 @@
         <br/>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-lg fa-twitter"></i>&nbspTwitter</a></li>
-            <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-facebook"></i>&nbspFacebook</a></li>
+            {{--<li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-facebook"></i>&nbspFacebook</a></li>--}}
         </ul>
 
         <div class="tab-content">
@@ -26,12 +26,12 @@
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
             </div>
-            <div id="menu1" class="tab-pane">
-                <div class="row">
-                    <div id="facebook-feed">
-                        <div class="fb-page" data-href="https://www.facebook.com/GhostHits/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GhostHits/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GhostHits/">Buddy The Balancing Wonder Dog</a></blockquote></div>
-                    </div>
+            {{--<div id="menu1" class="tab-pane">--}}
+                {{--<div class="row">--}}
+                    {{--<div id="facebook-feed">--}}
+                        {{--<div class="fb-page" data-href="https://www.facebook.com/GhostHits/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GhostHits/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GhostHits/">Buddy The Balancing Wonder Dog</a></blockquote></div>--}}
+                    {{--</div>--}}
 
-                </div>
-            </div>
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
