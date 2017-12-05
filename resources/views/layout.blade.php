@@ -1818,7 +1818,7 @@ em.caption-em{
     /*tabs custom styling*/
 
     .nav-tabs{
-        background-color:#C8D3DB;
+        /*background-color:#C8D3DB;*/
     }
 
     .nav-tabs > li > a{
@@ -1829,6 +1829,7 @@ em.caption-em{
         border-radius: 5px;
         color:#fff;
         border:1px solid black;
+        border-bottom: none;
     }
     .nav-tabs > li.active > a,
     .nav-tabs > li.active > a:focus,
@@ -1836,6 +1837,7 @@ em.caption-em{
         background-color: #68889E !important;
         color:#fff;
         border:2px solid #3F515F;
+        border-bottom: none;
     }
 
 
