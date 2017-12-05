@@ -1815,6 +1815,28 @@ em.caption-em{
     }
 
 
+    /*tabs custom styling*/
+
+    .nav-tabs{
+        background-color:#C8D3DB;
+    }
+
+    .nav-tabs > li > a{
+        border-radius: 5px;
+    }
+    .nav-tabs > li > a:hover{
+        background-color: #3D515F !important;
+        border-radius: 5px;
+        color:#fff;
+        border:1px solid black;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover{
+        background-color: #68889E !important;
+        color:#fff;
+        border:2px solid #3F515F;
+    }
 
 
 </style>
