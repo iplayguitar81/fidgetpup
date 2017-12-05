@@ -1825,7 +1825,7 @@ em.caption-em{
         border-radius: 5px;
     }
     .nav-tabs > li > a:hover{
-        background-color: #3D515F !important;
+        background-color: silver !important;
         border-radius: 5px;
         color:#fff;
         border:1px solid black;
@@ -1834,7 +1834,7 @@ em.caption-em{
     .nav-tabs > li.active > a,
     .nav-tabs > li.active > a:focus,
     .nav-tabs > li.active > a:hover{
-        background-color: silver !important;
+        background-color: #85f665 !important;
         color:#fff;
         border:2px solid #3F515F;
         border-bottom: none;
